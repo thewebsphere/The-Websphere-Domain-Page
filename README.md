@@ -3,7 +3,7 @@
 Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing in UI/UX development. I thrive on creating captivating user experiences that are visually stunning and also highly functional and intuitive. My goal is to push the boundaries of web technologies to deliver exceptional web applications.
 
 
-<h2 align="center"> What I Do </h2>
+<h1 align="center"> What I Do </h1>
 
 * Front-End Development: I have a strong command of HTML, CSS, and JavaScript, allowing me to craft engaging and interactive user interfaces.
 
@@ -12,7 +12,7 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 * Latest Web Technologies: I keep up with the latest trends and technologies in the web development industry. This enables me to leverage cutting-edge tools, frameworks, and libraries to deliver innovative solutions.
 
 
-<h2 align="center"> My Approach </h2>
+<h1 align="center"> My Approach </h1>
 
 * User-Centric Design: I believe in putting the user at the center of everything I create. Iconduct user research, developm personas, and create user flows to ensure that the final product meets their needs and expectations.
 
@@ -20,7 +20,7 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 
 * Collaboration: I enjoy working in cross-functional teams, collaborating with designers, back-end developers, and stakeholders to bring ideas to life. I value communication and believe that effective collaboration is key to successful project outcomes.
 
-<h2 align="center"> My GitHub Pages Websites <h2>
+<h1 align="center"> My GitHub Pages Websites <h1>
 
 Here are some of the websites I have created using GitHub Pages:
 
@@ -29,7 +29,7 @@ Here are some of the websites I have created using GitHub Pages:
 * https://cl9nt.github.io/E-Commerce/
 
 
-<h2 align="center"> Lets Connect! </h2>
+<h1 align="center"> Lets Connect! </h1>
 
 I'm always excited to collaborate on my new projects and explore opportunities to create exceptional user experiences. You can reach out to me via:
 
