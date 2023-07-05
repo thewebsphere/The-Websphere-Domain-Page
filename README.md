@@ -33,7 +33,7 @@ Here are some of the websites I have created using GitHub Pages:
 
 I'm always excited to collaborate on my new projects and explore opportunities to create exceptional user experiences. You can reach out to me via:
 
-* Twitter: @muthung_
+* Twitter: https://twitter.com/muthung_
 * LinkedIn: Clinton Muthungu Ndegwa
 
 
