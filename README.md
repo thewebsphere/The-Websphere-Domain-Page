@@ -25,7 +25,7 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 Here are some of the websites I have created using GitHub Pages:
 
 * https://cl9nt.github.io/my_portfolio/
-* https://cl9nt.github.io/muthungu_Webpage/
+* https://cl9nt.github.io/muthungu-Webpage/
 * https://cl9nt.github.io/E-Commerce/
 
 
