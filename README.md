@@ -22,7 +22,7 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 
 <h1 align="center"> My GitHub Pages Websites </h1>
 
-Here are some of the websites I have created using GitHub Pages:
+Here are some of the websites I have created. Hosted on GitHub Pages:
 
 * https://cl9nt.github.io/my_portfolio/
 * https://cl9nt.github.io/muthungu-Webpage/
