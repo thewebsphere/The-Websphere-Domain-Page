@@ -29,12 +29,12 @@ Here are some of the websites I have created. Hosted on GitHub Pages:
 * https://cl9nt.github.io/E-Commerce/
 
 
-<h1 align="center"> Lets Connect! </h1>
+<h1 align="center"> Lets Connect ! </h1>
 
-I'm always excited to collaborate on my new projects and explore opportunities to create exceptional user experiences. You can reach out to me via:
+I'm always excited to collaborate on new projects and explore opportunities to create exceptional user experiences. You can reach out to me via:
 
 * Twitter: https://twitter.com/@muthung_
 * LinkedIn: Clinton Muthungu Ndegwa
 
 
-Feel free to get in touch if you have any questions, ideas, or potential collaborations. Let's make the web a more beautiful and user-Friendly place together!.
+Feel free to get in touch if you have any questions, ideas, or potential collaborations. Let's make the web a more beautiful and user-friendly place together!.
