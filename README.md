@@ -26,7 +26,7 @@ Here are some of the websites I have created. Hosted on GitHub Pages:
 
 * https://cl9nt.github.io/my_portfolio/
 * https://cl9nt.github.io/muthungu-Webpage/
-* https://cl9nt.github.io/E-Commerce/
+* https://cl9nt.github.io/Yanken
 
 
 <h1 align="center"> Lets Connect ! </h1>
