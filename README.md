@@ -24,9 +24,10 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 
 Here are some of the websites I have created. Hosted on GitHub Pages:
 
-* https://cl9nt.github.io/my_portfolio/
-* https://cl9nt.github.io/muthungu-Webpage/
-* https://cl9nt.github.io/Yanken
+* https://muthung.github.io/my_portfolio/
+* https://muthung.github.io/muthungu-Webpage/
+* https://muthung.github.io/Yanken
+* https://muthung.github.io/Personal_Portfolio/
 
 
 <h1 align="center"> Lets Connect ! </h1>
