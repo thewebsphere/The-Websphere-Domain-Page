@@ -1,4 +1,4 @@
-<h1 align="center"> Front-End Developer | UI/UX Specialist </h1>
+<h1 align="center"> Software Developer | UI/UX Specialist </h1>
 
 Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing in UI/UX development. I thrive on creating captivating user experiences that are visually stunning and also highly functional and intuitive. My goal is to push the boundaries of web technologies to deliver exceptional web applications.
 
