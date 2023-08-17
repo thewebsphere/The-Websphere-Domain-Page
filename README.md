@@ -6,6 +6,8 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 <h1 align="center"> What I Do </h1>
 
 * Front-End Development: I have a strong command of HTML, CSS, and JavaScript, allowing me to craft engaging and interactive user interfaces.
+  
+* Back-End Development: I possess a solid mastery of server-side languages and technologies, enabling me to create robust and efficient data processing and server functionalities.
 
 * UI/UX Design: I am passionate about creating beautiful and intuitive user experiences. I pay attention to detail, ensuring that every element of the design enhances usability and user satisfaction.
 
