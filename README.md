@@ -22,7 +22,7 @@ Hey there! I'm Clinton Muthungu, a passionate Software Developer specializing in
 
 * Collaboration: I enjoy working in cross-functional teams, collaborating with designers, back-end developers, and stakeholders to bring ideas to life. I value communication and believe that effective collaboration is key to successful project outcomes.
 
-<h1 align="center"> My GitHub Pages Websites </h1>
+<h1 align="center"> Web Development Websites </h1>
 
 Here are some of the websites I have created. Hosted on GitHub Pages:
 
