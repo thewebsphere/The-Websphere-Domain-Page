@@ -1,11 +1,13 @@
-<h1 align="center"> Front-End Developer | UI/UX Specialist </h1>
+<h1 align="center"> Software Developer | UI/UX Specialist </h1>
 
-Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing in UI/UX development. I thrive on creating captivating user experiences that are visually stunning and also highly functional and intuitive. My goal is to push the boundaries of web technologies to deliver exceptional web applications.
+Hey there! I'm Clinton Muthungu, a passionate Software Developer specializing in UI/UX development. I thrive on creating captivating user experiences that are visually stunning and also highly functional and intuitive. My goal is to push the boundaries of web technologies to deliver exceptional web applications.
 
 
 <h1 align="center"> What I Do </h1>
 
 * Front-End Development: I have a strong command of HTML, CSS, and JavaScript, allowing me to craft engaging and interactive user interfaces.
+  
+* Back-End Development: I possess a solid mastery of server-side languages and technologies, enabling me to create robust and efficient data processing and server functionalities.
 
 * UI/UX Design: I am passionate about creating beautiful and intuitive user experiences. I pay attention to detail, ensuring that every element of the design enhances usability and user satisfaction.
 
@@ -20,7 +22,7 @@ Hey there! I'm Clinton Muthungu, a passionate Front-End Developer specializing i
 
 * Collaboration: I enjoy working in cross-functional teams, collaborating with designers, back-end developers, and stakeholders to bring ideas to life. I value communication and believe that effective collaboration is key to successful project outcomes.
 
-<h1 align="center"> My GitHub Pages Websites </h1>
+<h1 align="center"> Web Development Websites </h1>
 
 Here are some of the websites I have created. Hosted on GitHub Pages:
 
