@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 
 body {
     background-color: black;
@@ -6,21 +6,39 @@ body {
     height: 100%;
 }
 
-.row .col-2 {
-    font-family: 'Yeseva One', serif;
-    font-size: 23px;
-    color: #fff;
+.row .col-2 .left-link {
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+.row .col-2 .left-link:hover {
+    transform: translateX(14px);
+}
+
+.row .col-2 .right-link {
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    color: red;
+    transition: .5s ease-in-out;
+}
+
+.row .col-2 .right-link:hover {
+    transform: translateX(-14px);
 }
 
 .row .e-col {
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .row .b-col {
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
 }
 
 .d-block {
     width: 55rem;
     height: 55rem;
 }
+
