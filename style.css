@@ -1,4 +1,19 @@
-.container-fluid h1 {
-    font-size: 80px;
-    padding-top: 21rem;
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav ul li .nav-link {
+    font-family: 'Nova Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #3d3c3a;
+    color: #fff;
+    border-radius: 0 10px;
+    padding: .77rem;
 }
