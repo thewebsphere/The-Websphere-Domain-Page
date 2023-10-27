@@ -15,32 +15,30 @@
     <!-- Bootstrap Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Javascript -->
-    <script src="./script.js"></script>
 </head>
   <body>
+
+    <!----------- Navigation Section ----------->
+    <nav class="navigation fixed-top py-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item px-2">
+          <a class="nav-link px-4" href="#">HOME</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link px-3" href="#About">ABOUT</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">PROJECTS</a>
+        </li>
+      </ul>
+    </nav>
 
     <!----------- Home Section ----------->
     <div class="container-fluid" id="Home">
       <div class="row pt-5">
-
-        <!----------- Navigation Section ----------->
-        <nav class="navigation pb-3">
-          <ul class="nav justify-content-center px-1">
-            <li class="nav-item px-2">
-              <a class="nav-link px-4" href="#">HOME</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link px-3" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">PROJECTS</a>
-            </li>
-          </ul>
-        </nav>
 
         <!----------- Home Heading ----------->
         <h1 class="homeName text-center px-2 my-4">Clinton</h1>
@@ -51,7 +49,7 @@
           all the way to Python, a little PHP and Linux System Administration.
         </p>
 
-        <h2 class="homeContact text-center text-white pt-4">Learn More</h2>
+        <h2 class="homeContact text-center text-white my-4 py-4">Learn More</h2>
         <span class="material-symbols-outlined text-center" id="materialSymbol">
           arrow_downward
           </span>
@@ -60,12 +58,17 @@
     </div>
 
     <!----------- ABOUT SECTION ----------->
-    <div class="container-fluid">
+    <div class="container-fluid" id="About"> 
       <div class="row">
         <div class="col text-center">Helloworld</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint hic magni exercitationem eveniet distinctio, doloremque nulla unde 
+          animi numquam assumenda dolorem aut beatae temporibus non sit quia, iusto ea doloribus.
+        </p>
       </div>
     </div>
-
+    
+    <!-- Javascript -->
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
