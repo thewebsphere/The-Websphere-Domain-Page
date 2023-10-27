@@ -11,9 +11,26 @@ body {
 nav ul li .nav-link {
     font-family: 'Nova Mono', monospace;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     background-color: #3d3c3a;
     color: #fff;
-    border-radius: 0 10px;
+    border-radius: 0 0 14px 14px;
+    border-top: 2px solid red;
     padding: .77rem;
+    transition: 0.8s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li .nav-link:hover {
+    background:
+     linear-gradient(to top,
+      #3d3c3a 0%,
+       #3d3c3a 5%,
+       #fff 25%,
+       #fff 40%,
+        #fff 50%,
+         #fff 75%,
+          #fff 100%);
+    color: black;
 }
