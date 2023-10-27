@@ -10,12 +10,12 @@ body {
 
 nav ul li .nav-link {
     font-family: 'Nova Mono', monospace;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #3d3c3a;
     color: #fff;
     border-radius: 0 0 14px 14px;
     border-top: 2px solid red;
-    padding: .77rem;
+    padding: .67rem;
     transition: 0.6s ease-in-out;
     position: relative;
     z-index: 1;
