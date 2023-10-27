@@ -12,26 +12,54 @@ body {
 nav ul li .nav-link {
     font-family: 'Nova Mono', monospace;
     font-size: 14px;
-    padding: 0 .67rem;
-    transition: 0.3s ease-in-out;
-   color: #fff;
+    padding: 0.77rem;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+    border-radius: 14px;
 }
 
+nav ul li .nav-link:hover {
+    background-color: #ff0000;
+    color: #000;
+}
 
 /************* HOME SECTION ***************/
 
-.container-fluid .row h1 {
+.container-fluid .row .homeName {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 7.7rem;
     color: #ff0000;
-    opacity: 0.7;
-    padding: 4px;
+    padding-top: 5.5rem;
     text-transform: uppercase;
-    letter-spacing: 2rem;
+    text-shadow: 2px 2px #fff;
+    letter-spacing: 3rem;
 }
 
 #Home {
     background-image: url(./assets/back.jpeg);
     height: 62rem;
+}
+
+.container-fluid .row .homeText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.container-fluid .row .myName {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.container-fluid .row .homeContact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.container-fluid .row .material-symbols-outlined {
+    font-size: 42px;
+    color: #fff;
 }
