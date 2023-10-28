@@ -41,12 +41,11 @@ nav ul li .nav-link:hover {
 #Home {
     background-image: url(./assets/back.jpeg);
     height: 62rem;
-    transform: scale(1);
-    transition: transform .3s;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 .container-fluid .row .homeText {
@@ -55,18 +54,21 @@ nav ul li .nav-link:hover {
     font-size: 16px;
     letter-spacing: 2px;
     color: #fff;
+    transform: translateY(7px);
+    transition: transform .3s;
+}
+
+
+.container-fluid .row .homeText .breaker {
+    margin-top: 21px;
 }
 
 .container-fluid .row .myName {
     color: #ff0000;
     cursor: pointer;
+    text-shadow: 2px 2px #000;
 }
 
-.container-fluid .row .homeContact {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 42px;
-    font-weight: 400;
-}
 
 .container-fluid .row .material-symbols-outlined {
     font-size: 42px;
@@ -90,3 +92,8 @@ nav ul li .nav-link:hover {
 }
 
 /************* ABOUT SECTION ***************/
+
+#About {
+    background-color: #000000;
+    height: 40rem;
+}
