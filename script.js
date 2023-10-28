@@ -6,7 +6,7 @@ let prevScrollY = window.scrollY;
 // Update font size based on scroll position
 function updateScale() {
     const scrollY = window.scrollY;
-    const newScale = 1 + (scrollY * 0.001);
+    const newScale = 0.9 + (scrollY * 0.001);
     header.style.transform = `scale(${newScale})`;
 }
 
@@ -23,7 +23,7 @@ function scrollDown() {
 function opacityReduction() {
     const scrollY = window.scrollY;
     if (scrollY < prevScrollY) {
-        const newOpacity = 1 - scrollY * 0.5;
+        const newOpacity = 1 - scrollY * 0.05;
         homeContainer.style.opacity = newOpacity;
     }
     prevScrollY = scrollY;
