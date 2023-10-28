@@ -141,5 +141,10 @@ nav ul li .nav-link:hover {
 
 #About .aboutMore a:hover {
     text-decoration: none;
-    transform: translateX(-5px);
+}
+
+#About .AboutMe .list-group .list-group-item {
+    background-color: #000;
+    color: #fff;
+    border: none;
 }
