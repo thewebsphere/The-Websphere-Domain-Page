@@ -142,8 +142,9 @@ nav ul li .nav-link:hover {
 }
 
 #About .AboutMe .list-group .list-group-item {
+    font-family: 'Montserrat', sans-serif;
     background-color: #000;
-    color: #fff;
+    color: gray;
     border: none;
 }
 
