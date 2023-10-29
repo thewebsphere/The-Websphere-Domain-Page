@@ -102,7 +102,7 @@ nav ul li .nav-link:hover {
 
 #About {
     background-color: #000000;
-    height: 62.1em;
+    height: 100%;
     width: 100%;
 }
 
@@ -122,7 +122,10 @@ nav ul li .nav-link:hover {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
+    opacity: .7;
     font-size: 2rem;
+    letter-spacing: 5px;
+    text-decoration: underline;
 }
 
 #About .aboutText {
@@ -165,4 +168,79 @@ nav ul li .nav-link:hover {
     opacity: 1;
     max-height: 1000px;
     transform: translateY(-21px);
+}
+
+#About .more-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#About .more-info .card {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    border: 8px solid #ff0000;
+    box-shadow:  2px 2px #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#About .more-info .card .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+#About .more-info .card .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #ff21212f;
+    opacity: .8;
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s ease-in-out;
+}
+
+#About .more-info .card:hover .card-body {
+    right: 0;
+}
+
+#About .more-info .card .card-body .card-title {
+    text-transform: uppercase;
+    font-size: 49px;
+    font-weight: 500;
+}
+
+#About .more-info .card .card-body .card-sub-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#About .more-info .card .card-body .card-info {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+#About .more-info .card .card-body .card-btn {
+    color: #ff0000;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
 }
