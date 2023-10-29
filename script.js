@@ -1,6 +1,10 @@
 const header = document.querySelector('.homeName');
 const home = document.querySelector('.homeText');
 const homeContainer = document.querySelector('#Home');
+const Sbutton = document.getElementById('skills-link');
+const Ebutton = document.getElementById('experience-link');
+const skillsList = document.getElementById('skills-list');
+const experienceList = document.getElementById('experience-list');
 let prevScrollY = window.scrollY;
 
 // Update font size based on scroll position
@@ -34,3 +38,16 @@ window.addEventListener('scroll', () => {
     scrollDown();
     opacityReduction();
 });
+
+
+// Toggles the list-group with animation
+function toggleList() {
+    skillsList.classList.toggle('show-list');
+}
+
+function toggleEList() {
+    experienceList.classList.toggle('show-list');
+}
+
+Sbutton.addEventListener('click', toggleList);
+Ebutton.addEventListener('click', toggleEList);

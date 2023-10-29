@@ -133,18 +133,42 @@ nav ul li .nav-link:hover {
     font-size: 15px;
 }
 
-#About .aboutMore a {
+#About .aboutMore button {
     color: #ff0000;
     opacity: .6;
     transition: .3s ease-in-out;
-}
-
-#About .aboutMore a:hover {
-    text-decoration: none;
+    font-size: 21px;
+    padding-bottom: 14px;
 }
 
 #About .AboutMe .list-group .list-group-item {
     background-color: #000;
     color: #fff;
     border: none;
+}
+
+#About .aboutMore #skills-list {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .3s, transform .3s;
+}
+
+#About #experience-list {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .3s, transform .3s;
+}
+
+#About .aboutMore #skills-list.show-list {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#About #experience-list.show-list {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
