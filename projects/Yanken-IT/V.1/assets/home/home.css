@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+hr{
+    color: #06cb48 solid .7px;
+    opacity: .2;
+}
+
+/****** Body ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 2px;
+    margin: 4px;
+}
+
+/************ Navigation Bar **************/
+
+.container {
+    height: 30%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 12px;
+}
+
+/*************** Navbar Logo **********************/
+
+.logo {
+    color: rgb(35, 63, 38);
+    font-weight: 400;
+    font-family: 'Alkalami', serif;
+    font-size: 1.9rem;
+    text-decoration: overline #06cb48 solid .7px;
+}
+
+/*************** Navbar Links **********************/
+
+.container .navbar ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 5px 25px;
+    margin: 5px;
+}
+
+.container .navbar ul li a{
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.container .navbar ul li a:hover{
+    color: #06cb48;
+    border-top: #06cb48 solid .7px;
+    border-bottom: #06cb48 solid .7px;
+    border-radius: 6px;
+    background:#fff;
+    padding: .3rem;
+    transition: .2s ease-in-out;
+}
+
+/*************** Navbar Search Container **********************/
+
+.search-container {
+    padding: 4px;
+    text-decoration: none;
+    padding-right: 60px;
+}
+
+.search-container input {
+    border: none;
+    padding: 7px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 2px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.search-container button i {
+    color: rgb(80, 80, 80);
+    font-size: 1rem;
+}
+
+/*************** Navbar Sign-up and Sign-in **********************/
+
+/*************** Navbar Dropdowns **********************/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    background-color: lightgray;
+    border: none;
+    padding: 6px;
+    color: white;
+    margin: 5px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    color: black;
+    font-size: .7em;
+    width: 70px;
+    font-weight: 300;
+}
+
+.dropdown-content a:hover{
+    background-color: #ffffff;
+    font-size: .9rem;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    background-color: #ffffff;
+}
+
+/************** Media Query Responsive Styling **********/
+/************** Upon Screen Descrease and Increase *****/
+/************** For Navigation Bar ********************/
+
+@media screen and (max-width: 910px) and (min-width: 0px) {
+  .navbar ul {
+    display: none;
+    transition: .1s ease-in-out;
+  }
+
+  form input {
+    display: none;
+    transition: .1s ease-in-out;
+  }
+
+  .search-btn {
+    display: none;
+    transition: .1s ease-in-out;
+  }
+
+  .dropdown .dropbtn {
+    border: 1px solid #000;
+    padding: 4px;
+    border-radius: 10px;
+  }
+
+  .dropdown .dropdown-content a{
+    display: none;
+    transition: .1s ease-in-out;
+  }
+
+}
+
+
+/************* Companys' Motto *************/
+
+.motto-container .motto-sub .motto {
+    height: 40vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+  
+.motto-container .motto-sub .motto .typing-motto {
+    width: 62%;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+
+/************** Media Query Responsive Styling **********/
+/************** Upon Screen Descrease and Increase *****/
+/************** For Company Logo ********************/
+
+@media  screen and (max-width: 910px) and (min-width: 0px) {
+  .motto-container {
+    display: none;
+    transition: .2s ease-in-out;
+  }
+}
+
+/************* Contact Button *************/
+
+/* ---------- Useful Button styling ---------- */
+
+.motto-container .motto-sub .motto .button{
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 0.8em 1.8em;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+
+}
+  
+.motto-container .motto-sub .motto .button:hover {
+    transition-duration: 0.1s;
+    background-color: #000000;
+}
+  
+.motto-container .motto-sub .motto .button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px #06cb48;
+}
+  
+.motto-container .motto-sub .motto .button:active:after {
+    box-shadow: 0 0 0 0 #06cb48;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+  
+.motto-container .motto-sub .motto .button:active {
+    top: 1px;
+}
+
+/************* Information Card *************/
+
+.card-container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card-container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.card-container .card .face.face1{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card-container .card:hover .face.face1{
+    background: #06cb48;
+    transform: translateY(0);
+}
+
+.card-container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card-container .card .face.face1 .content i {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding-left: 4.2rem;
+}
+
+.card-container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.card-container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card-container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+}
+
+.card-container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.card-container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.card-container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.card-container .card .face.face2 .content a:hover{
+    background: #06cb48;
+    color: #fff;
+}
+
+/***************** Contact ******************/
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container .contact-card {
+  background-color: #ffffff;
+  height: 37rem;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.contact-container .card__name {
+  margin-top: 15px;
+  margin-left: 150px;
+  font-size: 1.5em;
+  color: #000;
+}
+
+.contact-container .card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 20%;
+  border: 5px solid #121413;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #06cb48;
+  color: #06cb48;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #000000;
+  opacity: .5;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #edb91f;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+  margin-left: 143px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #39ff7b, #519ffff8);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #39ff7b, #519ffff8);
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 1.2em;
+  color: #000;
+  margin-left: 17px;
+  padding: 4px;
+}
+
+
+/************** Media Query Responsive Styling **********/
+/************** Upon Screen Descrease and Increase *****/
+/************** For Information Card ******************/
+
+@media  screen and (max-width: 910px) and (min-width: 0px) {
+  .card-container {
+    display: block;
+  }
+  .contact-container {
+    display: block;
+  }
+  .card__image{
+    margin-left: 0px;
+  }
+  .social-icons li {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) and (min-width: 0px) {
+  .contact-card .btn{
+    margin-left: 120px;
+  }
+}
+
+
+/***************** Footer ******************/
+
+
+.footer {
+	padding: 12px;
+	background: rgb(255, 255, 255);
+/* margin-top: auto;/* /*another magical line*/ 
+}
+
+.footer .f-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  width: 70rem;
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 10px;
+  margin-left: 160px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p span {
+  color: rgb(210, 7, 7);
+  font-size: 1.1rem;
+}
+
+.footer .copyright {
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-decoration: overline #06cb48;
+}
+
+/************** Media Query Responsive Styling **********/
+/************** Upon Screen Descrease and Increase *****/
+/************** For Footer ****************************/
+
+@media screen and (max-width: 910px) and (min-width: 0px) {
+  .footer p{
+    display: block;
+  }
+}
