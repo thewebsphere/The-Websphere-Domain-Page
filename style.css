@@ -7,7 +7,6 @@ body {
     height: 100%;
     scroll-behavior: smooth;
     background: #000;
-    overflow: hidden;
 }
 
 /************* NAVIGATION BAR ***************/
@@ -143,21 +142,6 @@ nav ul li .nav-link:hover {
     transition: .3s ease-in-out;
     font-size: 21px;
     padding-bottom: 14px;
-    animation: bouncer 1.7s infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes bouncer {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-      color: #fff;
-    }
-    60% {
-      transform: translateY(-10px);
-    }
 }
 
 #About .AboutMe .list-group .list-group-item {
@@ -260,7 +244,6 @@ nav ul li .nav-link:hover {
     width: 150px;
 }
 
-
 /************* BREAKER SECTION ***************/
 
 #img-breaker {
@@ -269,13 +252,223 @@ nav ul li .nav-link:hover {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    transition: opacity .3s;
     overflow: hidden;
 }
 
 /************* PROJECTS SECTION ***************/
 
-.projects {
-    height: 100rem;
-    width: 100%;
+#Projects {
+    height: 100%;
     background: #000;
+    overflow: hidden;
+}
+
+#Projects row {
+    padding: 0;
+    margin: 0;
+}
+
+#Projects .projectsHead {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-left: 2px solid #ff0000;
+    border-image: linear-gradient(to bottom, transparent 50%, #ff0000 50%) 1;
+    border-image-slice: 1;
+    font-size: 2.5rem;
+    transition: 1s ease-in-out;
+}
+
+#Projects .more-info {
+    margin-top: 10rem;
+}
+
+#Projects .more-info .card {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects .more-info .card .card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+#Projects .more-info .card .card-body-first {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    background: #0000009d;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s ease-in-out;
+}
+
+#Projects .more-info .card:hover .card-body-first {
+    left: 0;
+}
+
+#Projects .more-info .card .card-body-first .card-title {
+    text-transform: uppercase;
+    font-size: 49px;
+    font-weight: 500;
+}
+
+#Projects .more-info .card .card-body-first .card-sub-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Projects .more-info .card .card-body-first .card-info {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+#Projects .more-info .card .card-body-first .card-btn {
+    color: #ff0000;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
+    transition: .5s ease-in-out;
+}
+
+#Projects .more-info .card .card-body-first .card-btn:hover {
+    background-color: #fff;
+}
+
+#Projects .more-info .card .card-body-second {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    background: #0000009d;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s ease-in-out;
+}
+
+#Projects .more-info .card:hover .card-body-second {
+    left: 0;
+}
+
+#Projects .more-info .card .card-body-second .card-title {
+    text-transform: uppercase;
+    font-size: 49px;
+    font-weight: 500;
+}
+
+#Projects .more-info .card .card-body-second .card-sub-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Projects .more-info .card .card-body-second .card-info {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+#Projects .more-info .card .card-body-second .card-btn {
+    color: #ff0000;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
+    transition: .5s ease-in-out;
+}
+
+#Projects .more-info .card .card-body-second .card-btn:hover {
+    background-color: #fff;
+}
+
+#Projects .more-info .card .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #0000009d;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s ease-in-out;
+}
+
+#Projects .more-info .card:hover .card-body {
+    right: 0;
+}
+
+#Projects .more-info .card .card-body .card-title {
+    text-transform: uppercase;
+    font-size: 49px;
+    font-weight: 500;
+}
+
+#Projects .more-info .card .card-body .card-sub-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Projects .more-info .card .card-body .card-info {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+#Projects .more-info .card .card-body .card-btn {
+    color: #ff0000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
+    transition: .5s ease-in-out;
+}
+
+#Projects .more-info .card .card-body .card-btn:hover {
+    background-color: #000;
 }
