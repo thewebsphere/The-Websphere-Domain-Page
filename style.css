@@ -147,28 +147,21 @@ nav ul li .nav-link:hover {
     border: none;
 }
 
-#About .aboutMore #skills-list {
+#About .AboutMe .links-container .row {
+    height: 20rem;
+}
+
+.list-group {
     display: none;
     opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity .3s, transform .3s;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 1s, transform .5s;
 }
 
-#About #experience-list {
-    display: none;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity .3s, transform .3s;
-}
-
-#About .aboutMore #skills-list.show-list {
+.list-group.show-list {
     display: block;
     opacity: 1;
-    transform: translateY(0);
-}
-
-#About #experience-list.show-list {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+    max-height: 1000px;
+    transform: translateY(-21px);
 }
