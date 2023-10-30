@@ -265,8 +265,8 @@ nav ul li .nav-link:hover {
 }
 
 #Projects row {
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 #Projects .projectsHead {
@@ -279,8 +279,23 @@ nav ul li .nav-link:hover {
     transition: 1s ease-in-out;
 }
 
+#Projects .project-sub-title {
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: gray;
+}
+
+#Projects .projectsText {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-top: 11px;
+    letter-spacing: 2px;
+}
+
 #Projects .more-info {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 #Projects .more-info .card {
@@ -353,6 +368,7 @@ nav ul li .nav-link:hover {
     cursor: pointer;
     width: 150px;
     transition: .5s ease-in-out;
+    text-decoration: none;
 }
 
 #Projects .more-info .card .card-body-first .card-btn:hover {
@@ -410,6 +426,7 @@ nav ul li .nav-link:hover {
     cursor: pointer;
     width: 150px;
     transition: .5s ease-in-out;
+    text-decoration: none;
 }
 
 #Projects .more-info .card .card-body-second .card-btn:hover {
@@ -467,6 +484,7 @@ nav ul li .nav-link:hover {
     cursor: pointer;
     width: 150px;
     transition: .5s ease-in-out;
+    text-decoration: none;
 }
 
 #Projects .more-info .card .card-body .card-btn:hover {
