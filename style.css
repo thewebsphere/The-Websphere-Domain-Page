@@ -110,8 +110,7 @@ nav ul li .nav-link:hover {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     border-left: 2px solid #ff0000;
-    border-bottom: 2px solid #ff0000;
-    border-image: linear-gradient(to left, transparent 50%, #ff0000 50%) 1;
+    border-image: linear-gradient(to bottom, transparent 50%, #ff0000 50%) 1;
     border-image-slice: 1;
     font-size: 2.5rem;
     transition: 1s ease-in-out;
@@ -142,8 +141,6 @@ nav ul li .nav-link:hover {
     transition: .3s ease-in-out;
     font-size: 21px;
     padding-bottom: 14px;
-    background-color: #fff;
-    border-radius: 0 0 14px 14px;
     padding: 7px 14px;
 }
 
@@ -270,6 +267,7 @@ nav ul li .nav-link:hover {
 #Projects row {
     padding-top: 0;
     margin-top: 0;
+    overflow: hidden;
 }
 
 #Projects .projectsHead {
@@ -492,4 +490,39 @@ nav ul li .nav-link:hover {
 
 #Projects .more-info .card .card-body .card-btn:hover {
     background-color: #000;
+}
+
+#Projects .GetMore {
+    width: 7rem;
+    color: #ff0000;
+    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 14px;
+    font-size: 22px;
+    padding: 3px 7px;
+    transition: transform .5s ease-in-out;
+    overflow: hidden;
+}
+
+#Projects .GetMore:hover {
+    background-color: #fff;
+    transform: translateY(-7px);
+}
+
+/************* CONTACTS SECTION ***************/
+
+#Contacts {
+    background-color: #000;
+    height: 100%;
+    overflow: hidden;
+}
+
+#Contacts .contactHeader {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-left: 2px solid #ff0000;
+    border-image: linear-gradient(to bottom, transparent 50%, #ff0000 50%) 1;
+    border-image-slice: 1;
+    font-size: 2.5rem;
+    transition: 1s ease-in-out;
 }
