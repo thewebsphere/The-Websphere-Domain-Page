@@ -526,3 +526,25 @@ nav ul li .nav-link:hover {
     font-size: 2.5rem;
     transition: 1s ease-in-out;
 }
+
+#Contacts .col-8 .contactHead {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#Contacts .col-8 .contact-sub-head {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff9d;
+    font-size: 1.5rem;
+}
+
+/************* COPYRIGHT ***************/
+
+#Contacts .copyright {
+    background-image: url(./assets/back.jpeg);
+    height: 12rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
