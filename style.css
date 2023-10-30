@@ -138,10 +138,13 @@ nav ul li .nav-link:hover {
 
 #About .aboutMore button {
     color: #ff0000;
-    opacity: .6;
+    border-top: 4px solid #ff0000;
     transition: .3s ease-in-out;
     font-size: 21px;
     padding-bottom: 14px;
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    padding: 7px 14px;
 }
 
 #About .AboutMe .list-group .list-group-item {
