@@ -539,6 +539,33 @@ nav ul li .nav-link:hover {
     font-size: 1.5rem;
 }
 
+#Contacts .col-8 form {
+    margin-left: 21rem;
+}
+
+#Contacts .col-8 form .form-floating input {
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+#Contacts .col-8 form .form-floating label {
+    color: #ff0000;
+}
+
+#Contacts .col-8 form .form-floating textarea {
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 12rem;
+}
+
+#Contacts .col-8 form .btn {
+    background-color: #000;
+    color: #ff0000;
+    font-size: 21px;
+}
+
 /************* COPYRIGHT ***************/
 
 #Contacts .copyright {
