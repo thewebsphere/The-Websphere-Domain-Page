@@ -129,10 +129,10 @@ nav ul li .nav-link:hover {
 
 #About .aboutText {
     font-family: 'Montserrat', sans-serif;
-    color: gray;
+    color: #fff;
     letter-spacing: 2px;
     line-height: 27px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #About .aboutMore button {
@@ -547,6 +547,8 @@ nav ul li .nav-link:hover {
     background-color: #000;
     border: none;
     border-bottom: 2px solid gray;
+    color: #fff;
+    height: 14px;
 }
 
 #Contacts .col-8 form .form-floating label {
