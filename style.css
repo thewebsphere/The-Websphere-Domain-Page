@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@100;300&display=swap');
 
+/************* ROOT VARIABLES DESCRIPTIONS ***************/
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-sans-serif: 'Montserrat';
+    --box-shadow: 0px 21px 32px 0px rgba(53, 2, 2, 0.89);
+    --color-bg: #0d3029;
+    --grad-bright: linear-gradient(-55deg, #fff 0%, #ff0000 100%);
+    --grad-dark: linear-gradient(-55deg, #fff 0%, #ff0000 100%);
+    --fig-width: 380px;
+    --fig-height: 255px;
+    --delay-base: 500ms;
+    --delay-added: 100ms;
+    --acc-back: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -584,19 +600,6 @@ nav ul li .nav-link:hover {
     background-size: cover;
 }
 
-:root {
-  --font-display: 'Sedgwick Ave Display';
-  --font-sans-serif: 'Lato';
-  --box-shadow: 0px 21px 32px 0px rgba(8, 40, 34, 0.89);
-  --color-bg: #0d3029;
-  --grad-bright: linear-gradient(-55deg, #8fc2c9 0%, #bee0e5 100%);
-  --grad-dark: linear-gradient(-55deg, #248391 0%, #8fc2c9 100%);
-  --fig-width: 380px;
-  --fig-height: 255px;
-  --delay-base: 500ms;
-  --delay-added: 100ms;
-  --acc-back: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
 
 #Contacts .col-4 figure img {
   width: 100%;
@@ -611,6 +614,8 @@ nav ul li .nav-link:hover {
 
 figure{
   position: relative;
+  left: 200px;
+  top: 77px;
   width: var(--fig-width);
   height: var(--fig-height);
   transition: transform 600ms var(--acc-back);
@@ -670,28 +675,28 @@ figcaption span{
 }
 
 figcaption span:nth-of-type(1){
-  top: -44px; left: 44px;
-  font-size: 21px;
+  top: -4px; left: 44px;
+  font-size: 72px;
   animation-delay: calc(var(--delay-base) + 1 * var(--delay-added));
 }
 
 figcaption span:nth-of-type(2){
   top: -34px; left: -21px;
-  font-size: 89px;
+  font-size: 49px;
   font-family: var(--font-display);
   animation-delay: calc(var(--delay-base) + 2 * var(--delay-added));
 }
 
 figcaption span:nth-of-type(3){
   bottom: -38px; right: -21px;
-  font-size: 89px;
+  font-size: 79px;
   font-family: var(--font-display);
   animation-delay: calc(var(--delay-base) + 3 * var(--delay-added));
 }
 
 figcaption span:nth-of-type(4){
-  bottom: -50px; right: -21px;
-  font-size: 21px;
+  bottom: -105px; right: -21px;
+  font-size: 70px;
   animation-delay: calc(var(--delay-base) + 4 * var(--delay-added)); 
 }
 
