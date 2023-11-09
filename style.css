@@ -598,6 +598,12 @@ nav ul li .nav-link:hover {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    color: #fff;
+    font-size: 14px;
+}
+
+#Contacts .copyright .copyright-text {
+    margin-top: 149px;
 }
 
 
