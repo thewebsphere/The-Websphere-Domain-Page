@@ -49,3 +49,4 @@ function toggleList(list) {
 skillsButton.addEventListener('click', () => toggleList(skillsList));
 experienceButton.addEventListener('click', () => toggleList(experienceList));
 projectsButton.addEventListener('click', () => toggleList(projectsList));
+
