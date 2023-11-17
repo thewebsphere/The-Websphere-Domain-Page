@@ -17,22 +17,28 @@ nav ul li .nav-link {
     font-weight: 500;
     padding: 0.77rem;
     transition: 0.5s ease-in-out;
-    color: #000;
+    color: #42ab49;
     letter-spacing: 2px;
     border-bottom: 1.5px solid #000;
 }
 
 nav ul li .nav-link:hover {
     transform: scale(1.1);
+    color: #dcf5d6;
 }
 
 /************* PROJECT SECTION ***************/
 
 #Projects {
-    margin-top: 7rem;
+    margin-top: 11rem;
 }
 
 
+#Projects #projectsRow #projectsImage {
+    padding-left: 2.8rem;
+}
+
 #Projects #projectsRow #projectsImage img {
-    width: 70rem;
+    width: 77rem;
+    border-radius: 14px;
 }
