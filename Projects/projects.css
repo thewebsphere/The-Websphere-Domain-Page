@@ -43,10 +43,18 @@ nav ul li .nav-link:hover {
     padding-left: 2.8rem;
 }
 
-#Projects #projectsRow #projectsImage img {
+#Projects #projectsRow #projectsImage .img img {
     width: 77rem;
     border-radius: 14px;
 }
+
+#Projects #projectsRow #projectsImage img {
+    margin-top: 21px;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 14px;
+}
+
 
 #Projects #projectsRow #projectsBrief #projectsNumber {
     font-size: 10rem;
