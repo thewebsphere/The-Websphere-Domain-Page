@@ -20,16 +20,14 @@ nav ul li .nav-link {
     font-size: 14px;
     font-weight: 500;
     padding: 0.77rem;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     color: #42ab49;
     letter-spacing: 2px;
     border-bottom: 1.5px solid #000;
 }
 
 nav ul li .nav-link:hover {
-    color: #16420b;
-    border-top: 1.5px solid #000;
-    border-bottom: none;
+    color: #000;
 }
 
 /************* PROJECT SECTION ***************/
@@ -62,3 +60,22 @@ nav ul li .nav-link:hover {
     font-family: var(--font-family);
 }
 
+
+#Projects #projectsRow #projectsBrief #projects-subTitle {
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+
+#Projects #projectsRow #projectsBrief .wrapper .badge {
+    padding: 21px;
+    border-radius: 7px;
+}
+
+#Projects #projectsRow #projectsBrief .wrapper .badge img {
+    display: inline-block;
+	top: 0;
+	transition: all 0.2s ease;
+    box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+    width: 9rem;
+}
