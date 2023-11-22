@@ -23,7 +23,6 @@ nav ul li .nav-link {
     transition: .5s ease-in-out;
     color: #42ab49;
     letter-spacing: 2px;
-    border-bottom: 1.5px solid #000;
 }
 
 nav ul li .nav-link:hover {
@@ -33,7 +32,7 @@ nav ul li .nav-link:hover {
 /************* PROJECT SECTION ***************/
 
 #Projects {
-    margin-top: 11rem;
+    margin-top: 7rem;
 }
 
 
@@ -66,10 +65,8 @@ nav ul li .nav-link:hover {
     font-family: var(--font-family);
 }
 
-
 #Projects #projectsRow #projectsBrief .wrapper .badge {
     padding: 21px;
-    border-radius: 7px;
 }
 
 #Projects #projectsRow #projectsBrief .wrapper .badge img {
@@ -77,5 +74,24 @@ nav ul li .nav-link:hover {
 	top: 0;
 	transition: all 0.2s ease;
     box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
-    width: 9rem;
+    width: 7rem;
+    border-radius: .7rem;
+}
+
+#Projects #projectsRow #projectsBrief .wrapper .badge {
+    padding-top: 21px;
+    color: #fff;
+    opacity: .5;
+    transition: 1.4s ease-in-out;
+}
+
+#Projects #projectsRow #projectsBrief .wrapper .badge:hover {
+    color: #000000;
+    opacity: 1;
+}
+
+#Projects #projectsRow #projectsBrief .wrapper .badge p {
+    padding-top: 21px;
+    font-size: 21px;
+    color: #000;
 }
