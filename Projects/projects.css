@@ -67,31 +67,24 @@ nav ul li .nav-link:hover {
 
 #Projects #projectsRow #projectsBrief .wrapper .badge {
     padding: 21px;
+    transition: .7s ease-in;
+}
+
+#Projects #projectsRow #projectsBrief .wrapper .badge:hover {
+    opacity: .8;
 }
 
 #Projects #projectsRow #projectsBrief .wrapper .badge img {
     display: inline-block;
 	top: 0;
-	transition: all 0.2s ease;
+	transition: all 0.5s ease;
     box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
     width: 7rem;
     border-radius: .7rem;
+    cursor: pointer;
 }
 
-#Projects #projectsRow #projectsBrief .wrapper .badge {
-    padding-top: 21px;
-    color: #fff;
-    opacity: .5;
-    transition: 1.4s ease-in-out;
-}
-
-#Projects #projectsRow #projectsBrief .wrapper .badge:hover {
-    color: #000000;
-    opacity: 1;
-}
-
-#Projects #projectsRow #projectsBrief .wrapper .badge p {
-    padding-top: 21px;
-    font-size: 21px;
-    color: #000;
+#Projects #projectsRow #projectsBrief .wrapper .badge img:hover {
+    box-shadow: none;
+    transform: rotateY(360deg);
 }
