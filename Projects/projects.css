@@ -31,6 +31,8 @@ nav ul li .nav-link:hover {
 
 /************* PROJECT SECTION ***************/
 
+/************* THE KINYOZI ***************/
+
 #Projects {
     margin-top: 7rem;
 }
@@ -52,29 +54,31 @@ nav ul li .nav-link:hover {
     border-radius: 14px;
 }
 
-
-#Projects #projectsRow #projectsBrief #projectsNumber {
+#projectsNumber {
     font-size: 10rem;
     color: #42ab49;
     font-family: var(--font-family);
 }
 
-
-#Projects #projectsRow #projectsBrief #projects-subTitle {
+#projects-subTitle {
     color: #42ab49;
     font-family: var(--font-family);
 }
 
-#Projects #projectsRow #projectsBrief .wrapper .badge {
+.wrapper {
+    padding-top: 42px;
+}
+
+.wrapper .badge {
     padding: 21px;
     transition: .7s ease-in;
 }
 
-#Projects #projectsRow #projectsBrief .wrapper .badge:hover {
+.wrapper .badge:hover {
     opacity: .8;
 }
 
-#Projects #projectsRow #projectsBrief .wrapper .badge img {
+.wrapper .badge img {
     display: inline-block;
 	top: 0;
 	transition: all 0.5s ease;
@@ -84,7 +88,70 @@ nav ul li .nav-link:hover {
     cursor: pointer;
 }
 
-#Projects #projectsRow #projectsBrief .wrapper .badge img:hover {
+.wrapper .badge img:hover {
     box-shadow: none;
     transform: rotateY(360deg);
+}
+
+
+/************* MUTHUNGU WEBPAGE ***************/
+
+.PMuthungu {
+    margin-left: 32px;
+}
+
+#Projects #projectsRow #MuthunguImage {
+    padding-left: 2.8rem;
+}
+
+#Projects #projectsRow #MuthunguImage .img img {
+    width: 77rem;
+    border-radius: 14px;
+}
+
+#Projects #projectsRow #MuthunguImage img {
+    margin-top: 21px;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 14px;
+}
+
+#MuthunguNumber {
+    font-size: 10rem;
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+#Muthungu-subTitle {
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+/************* COMPANY WEBPAGE ***************/
+
+#Projects #projectsRow #companyImage {
+    padding-left: 2.8rem;
+}
+
+#Projects #projectsRow #companyImage .img img {
+    width: 77rem;
+    border-radius: 14px;
+}
+
+#Projects #projectsRow #companyImage img {
+    margin-top: 21px;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 14px;
+}
+
+#companyNumber {
+    font-size: 10rem;
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+#company-subTitle {
+    color: #42ab49;
+    font-family: var(--font-family);
 }
