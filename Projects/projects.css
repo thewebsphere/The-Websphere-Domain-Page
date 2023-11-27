@@ -96,10 +96,6 @@ nav ul li .nav-link:hover {
 
 /************* MUTHUNGU WEBPAGE ***************/
 
-.PMuthungu {
-    margin-left: 32px;
-}
-
 #Projects #projectsRow #MuthunguImage {
     padding-left: 2.8rem;
 }
@@ -152,6 +148,35 @@ nav ul li .nav-link:hover {
 }
 
 #company-subTitle {
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+/************* COMPANY STORE WEBPAGE ***************/
+
+#Projects #projectsRow #storeImage {
+    padding-left: 2.8rem;
+}
+
+#Projects #projectsRow #storeImage .img img {
+    width: 77rem;
+    border-radius: 14px;
+}
+
+#Projects #projectsRow #storeImage img {
+    margin-top: 21px;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 14px;
+}
+
+#storeNumber {
+    font-size: 10rem;
+    color: #42ab49;
+    font-family: var(--font-family);
+}
+
+#store-subTitle {
     color: #42ab49;
     font-family: var(--font-family);
 }
