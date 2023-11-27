@@ -1,18 +1,18 @@
-var ProjectImg = document.getElementById('projectsImage');
-var ProjectBrief = document.getElementById('projectsBrief')
+var projectsImages = ['projectsImage', 'MuthunguImage', 'companyImage', 'storeImage'];
+var projectsBriefs =['projectsBrief', 'MuthunguBrief', 'companyBrief', 'storeBrief'];
 
-var MBrief = document.getElementById('MuthunguBrief');
-var MImg = document.getElementById('MuthunguImage');
+function nextProject(index) {
+    document.getElementById(projectsImages[index]).style.display = 'none';
+    document.getElementById(projectsBriefs[index]).style.display = 'none';
 
-var CBrief = document.getElementById('companyBrief');
-var CImg = document.getElementById('companyImage');
+    var nextIndex = (index + 1) % projectsImages.length;
 
-var SBrief = document.getElementById('storeBrief');
-var SImg = document.getElementById('storeImage');
+    document.getElementById(projectsImages[nextIndex]).style.display = 'block';
+    document.getElementById(projectsBriefs(nextIndex)).style.display = 'block';
+}
 
-setTimeout(function()  {
-    ProjectImg.style.display = 'none';
-    ProjectBrief.style.display = 'none';
-    MImg.style.display = 'block';
-    MBrief.style.display = 'block';
+nextProject(0);
+
+var timerId = setInterval(function() {
+    nextProject(projectsImages.indexOf('projectsImage'));
 }, 4200);
