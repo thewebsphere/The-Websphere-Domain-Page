@@ -391,6 +391,13 @@ body.nav-active {
 .navbar-link {
     font-weight: var(--fw-700);
     padding-block: 6px;
+    padding: 7px;
+    transition: var(--transition-1);
+    border-radius: 7.7px;
+}
+
+.navbar-link:hover {
+    background-color: #c22716;
 }
 
 .contact-link {
