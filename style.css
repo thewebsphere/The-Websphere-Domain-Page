@@ -13,7 +13,7 @@ body {
 svg {
     position: fixed;
     top: 25%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     height: 150px;
     width: 150px;
@@ -42,4 +42,9 @@ svg {
     left: 5%;
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Updating-Down2 span {
+    color: #0a7c1d;
+    padding: 6px;
 }
