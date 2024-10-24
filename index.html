@@ -24,7 +24,7 @@
 
     <!-- - Custom CSS - -->
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- - Preloaded Img - -->
 
@@ -37,808 +37,85 @@
 
 <body>
 
-    <!--- #HEADER --->
-
-    <header class="header" data-header>
-        <div class="container">
-
-            <a href="#About" class="logo">
-                <img src="./assets/images/logo-light.png" width="74" height="24" alt="Muthungu home" class="logo-light">
-
-                <img src="./assets/images/logo-dark.png" width="74" height="24" alt="Muthungu home" class="logo-dark">
-            </a>
-
-            <nav class="navbar" data-navbar>
-
-                <div class="navbar-top">
-                    <a href="#About" class="logo">
-                        <img src="./assets/images/logo-light.png" width="74" height="24" alt="Muthungu home">
-                    </a>
-
-                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-                </div>
-
-                <ul class="navbar-list">
-
-                    <li>
-                        <a href="#Home" class="navbar-link">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#About" class="navbar-link">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#Blog" class="navbar-link">Blog</a>
-                    </li>
-
-                    <li>
-                        <a href="#Project" class="navbar-link">Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#Contact" class="navbar-link">Contact</a>
-                    </li>
-
-                    <li>
-                        <a href="./V.1/index.html" class="navbar-link">V.1</a>
-                    </li>
-
-                </ul>
-
-                <div class="wrapper">
-                    <a href="mailto:contact@muthungu.co.ke" class="contact-link">contact@muthungu.co.ke</a>
-
-                    <a href="tel:+2512629497" class="contact-link">+254 712 629 497</a>
-                </div>
-
-                <ul class="social-list">
-
-                    <li>
-                        <a href="x.com/_MUTHUNGU_" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-dribbble"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:contact@muthungu.co.ke" class="social-link">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <a href="./assets/login/login.html" class="btn btn-primary">Subscribe</a>
-
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-            <div class="overlay" data-nav-toggler data-overlay></div>
-
+    <!-- - Main Page -->
+    <div class="main">
+        <h1 class="Updating"> Updating... </h1>
+        <div class="loader">
+            <svg viewBox="0 0 100 100">
+                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+                    <!-- left line -->
+                    <path d="M 21 40 V 59">
+                        <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="rotate"
+                  values="0 21 59; 180 21 59"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <!-- right line -->
+                    <path d="M 79 40 V 59">
+                        <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="rotate"
+                  values="0 79 59; -180 79 59"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <!-- top line -->
+                    <path d="M 50 21 V 40">
+                        <animate
+                  attributeName="d"
+                  values="M 50 21 V 40; M 50 59 V 40"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <!-- btm line -->
+                    <path d="M 50 60 V 79">
+                        <animate
+                  attributeName="d"
+                  values="M 50 60 V 79; M 50 98 V 79"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <!-- top box -->
+                    <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+                    <animate
+                  attributeName="stroke"
+                  values="rgba(255,255,255,1); rgba(100,100,100,0)"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <!-- mid box -->
+                    <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+                    <!-- btm box -->
+                    <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
+                    <animate
+                  attributeName="stroke"
+                  values="rgba(100,100,100,0); rgba(255,255,255,1)"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                    </path>
+                    <animateTransform
+                  attributeName="transform"
+                  attributeType="XML"
+                  type="translate"
+                  values="0 0; 0 -19"
+                  dur="2s"
+                  repeatCount="indefinite" />
+                </g>
+            </svg>
+            <h1 class="Updating-Down"> ~ contact@muthungu.co.ke
+            </h1>
+            <h2 class="Updating-Down2"> ~ A cup of tea for a developer.
+                <br> Bitcoin: 35Sd7gexs6TzVTSFm9Xc7WwjnBUmwq6c5x
+                <br> XMR: 89JZVuhBwV3iFjoqsH9fCpbRHEgfPkDAFVZFMx9295hPPGNiQm21sEqjETbL68Adw9f1aNj5EZebP9ncbihL9cYo6nbeCPY
+                <br> ETH: 0x801efbb6d5f93f0f22240b95f27bee7181bd2085
+                <br> Mpesa: +254 712 29 497
+            </h2>
         </div>
-    </header>
-
-
-    <main>
-        <article>
-
-            <!--- #HERO --->
-
-            <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
-                <div class="container">
-
-                    <div class="hero-content">
-
-                        <h1 class="h1 hero-title">I Am Muthungu</h1>
-                        <h3 class="h3 hero-title3">A Computer Engineer & Digital Marketer.</h3>
-
-                        <p class="hero-text">
-                            Welcome to my website!. Focus on growing your business while I take care of your IT needs. <br> I specialize in providing fully outsourced IT services, ensuring that your technology runs smoothly and efficiently. With a commitment
-                            to innovation and a proactive approach, I am here to support your success every step of the way.
-                        </p>
-
-                        <div class="btn-wrapper">
-
-                            <a href="./Explore/explore.html" class="btn btn-primary">Explore Now</a>
-
-                            <a href="./assets/login/login.html" class="btn btn-outline">Contact</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="hero-slider" data-slider>
-
-                        <div class="slider-inner">
-                            <ul class="slider-container" data-slider-container>
-
-                                <li class="slider-item">
-
-                                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                                        <img src="./assets/images/biz-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
-                                    </figure>
-
-                                </li>
-
-                                <li class="slider-item">
-
-                                    <div class="hero-card">
-                                        <figure class="img-holder" style="--width: 575; --height: 550;">
-                                            <img src="./assets/images/biz-slide-2.jpg" width="575" height="550" alt="hero banner" class="img-cover">
-                                        </figure>
-                                    </div>
-
-                                </li>
-
-                                <li class="slider-item">
-
-                                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                                        <img src="./assets/images/biz-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
-                                    </figure>
-
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-              <ion-icon name="arrow-back"></ion-icon>
-            </button>
-
-                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #SERVICE - -->
-
-            <section class="section service" aria-labelledby="service-label" id="About">
-                <div class="container">
-
-                    <p class="section-subtitle" id="service-label">What We Do?</p>
-
-                    <h2 class="h2 section-title">
-                        The service we offer is specifically designed to meet your needs.
-                    </h2>
-
-                    <ul class="grid-list">
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">24/7 Support</h3>
-
-                                <p class="card-text">
-                                    We match exceptional individuals with companies to create customer experiences that feel in-house, not outsourced.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Secure Payments</h3>
-
-                                <p class="card-text">
-                                    We prioritize your security with reliable, encrypted payment systems, ensuring transaction is seamless and protected.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Daily Updates</h3>
-
-                                <p class="card-text">
-                                    Stay informed with regular progress reports and updates, keepig you in the loop every step of the way.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
-                                </div>
-
-                                <h3 class="h4 card-title">Market Research</h3>
-
-                                <p class="card-text">
-                                    Leverage our expert insights to stay ahead of industry trends with comprehensive market research tailored to our business.
-                                </p>
-
-                                <a href="#" class="btn-text">
-                                    <span class="span">Learn More</span>
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #ABOUT - -->
-
-            <section class="about" aria-labelledby="about-label" id="Blog">
-                <div class="container">
-
-                    <figure class="about-banner">
-                        <img src="./assets/images/about-banner.jpg" width="800" height="580" loading="lazy" alt="about banner" class="w-100">
-                    </figure>
-
-                    <div class="about-content">
-
-                        <p class="section-subtitle" id="about-label">Why Choose Us?</p>
-
-                        <h2 class="h2 section-title">
-                            We bring solutions to make life easier for your clients.
-                        </h2>
-
-                        <ul>
-
-                            <li class="about-item">
-                                <div class="accordion-card expanded" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Professional Design</spna>
-                    </button>
-                                    </h3>
-
-                                    <p class="accordion-content">
-                                        Sleek, modern, and user-focused designs that captivate your audience.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Top-Notch Security</spna>
-                    </button>
-                                    </h3>
-
-                                    <p class="accordion-content">
-                                        Advanced security protocols to protect your data and ensure peace of mind.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Secure Data Centers</spna>
-                    </button>
-                                    </h3>
-
-                                    <p class="accordion-content">
-                                        Our Data Centres applies exclusively in the field of backup and recovery software to cover various data sources, multiple file types, backup types and storage types.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                            <li class="about-item">
-                                <div class="accordion-card" data-accordion>
-
-                                    <h3 class="card-title">
-                                        <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Efficient Algorithms</spna>
-                    </button>
-                                    </h3>
-
-                                    <p class="accordion-content">
-                                        Optimized solutions to streamline operations, enhance performance and reduce costs.
-                                    </p>
-
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #FEATURE - -->
-
-            <section class="section feature" aria-labelledby="feature-label">
-                <div class="container">
-
-                    <figure class="feature-banner">
-                        <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner" class="w-100">
-                    </figure>
-
-                    <div class="feature-content">
-
-                        <p class="section-subtitle" id="feautre-label">Our Solutions</p>
-
-                        <h2 class="h2 section-title">
-                            We make your customer service stress-free for you to have the perfect control.
-                        </h2>
-
-                        <p class="section-text">
-                            Muthungu Labs matches exceptional individuals with companies to create customer experiences that feel in-house, not outsourced.
-                        </p>
-
-                        <ul class="feature-list">
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                    24/7 Customer Support.
-                  </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                    Free IT Troubleshooting and Diagnosis.
-                  </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                    Quick Customer Service Responses. All Day long.
-                  </span>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="feature-card">
-
-                                    <div class="card-icon">
-                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                                    </div>
-
-                                    <span class="span">
-                    Fast Assessments and Systems updating.
-                  </span>
-
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #STATS - -->
-
-            <section class="stats" aria-label="our stats">
-                <div class="container">
-
-                    <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
-
-                        <li>
-                            <p class="card-text">
-                                <span class="h1">10</span>
-
-                                <spna class="span">Completed Projects</spna>
-                            </p>
-                        </li>
-
-                        <li>
-                            <p class="card-text">
-                                <span class="h1">10</span>
-
-                                <spna class="span">Happy Customers</spna>
-                            </p>
-                        </li>
-
-                        <li>
-                            <p class="card-text">
-                                <span class="h1">1</span>
-
-                                <spna class="span">Expert Employees</spna>
-                            </p>
-                        </li>
-
-                        <li>
-                            <p class="card-text">
-                                <span class="h1">4</span>
-
-                                <spna class="span">Awards Won</spna>
-                            </p>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #PROJECT - -->
-
-            <section class="section project" aria-labelledby="project-label" id="Project">
-                <div class="container">
-
-                    <p class="section-subtitle" id="project-label">Case Studies</p>
-
-                    <h2 class="h2 section-title">
-                        Check out some of our awesome projects with creative ideas and great design.
-                    </h2>
-
-                    <ul class="grid-list">
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                    <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Software Development</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        We are an international software development company that designs, builds, and delivers world-class standard products for big and small companies.
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                            <time class="meta-text" datetime="2022-04-14">14 July 2023</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="meta-text">Coding</span>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                    <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy" alt="Nullam id dolor elit id nibh" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Information Security</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        We are a cybersecurity advisors that help private and public sector organizations avert threats, close gaps, and effectively manage risk.
-                                    </p>
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                            <time class="meta-text" datetime="2022-03-29">14 July 2023</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="meta-text">Security</span>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="project-card">
-
-                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                                    <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy" alt="Ultricies fusce porta elit" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="h3">
-                                        <a href="#" class="card-title">Information Technology Consulting</a>
-                                    </h3>
-
-                                    <p class="card-text">
-                                        We Offer IT consulting services that will help you improve your software architecture, create a Labs-driven digital strategy, and improve operations.
-                                    </p>
-
-                                    <ul class="card-meta-list">
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                                            <time class="meta-text" datetime="2022-02-26">14 July 2023</time>
-                                        </li>
-
-                                        <li class="card-meta-item">
-                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="meta-text">Consulting</span>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- - #CTA - -->
-
-            <section class="cta" aria-label="call to action">
-                <div class="container">
-
-                    <h2 class="h2 section-title">
-                        Join our community by using our services and grow your business.
-                    </h2>
-
-                    <a href="./assets/login/login.html" class="btn btn-primary">Try it. Get 10% OFF.</a>
-
-                </div>
-            </section>
-
-        </article>
-    </main>
-
-
-
-
-
-    <!-- - #FOOTER - -->
-
-    <footer class="footer" id="Contact">
-        <div class="container grid-list">
-
-            <div class="footer-brand">
-
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo-light.png" width="74" height="24" alt="Muthungu home">
-                </a>
-
-                <p class="footer-text">
-                    &copy; 2023, muthunguclintn <br> All rights reserved.
-                </p>
-
-                <ul class="social-list">
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-dribbble"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <ul class="footer-list">
-
-                <li>
-                    <p class="h4 footer-list-title">Get in Touch</p>
-                </li>
-
-                <li>
-                    <address class="footer-text">
-            Kitale, 30208. Kenya
-          </address>
-                </li>
-
-                <li>
-                    <a href="mailto:muthunguclintn@gmail.com" class="footer-link">muthunguclintn@gmail.com</a>
-                </li>
-
-                <li>
-                    <a href="tel:+254 712 629 497" class="footer-link">+254 712 629 497</a>
-                </li>
-
-            </ul>
-
-            <ul class="footer-list">
-
-                <li>
-                    <p class="h4 footer-list-title">Learn More</p>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">About Us</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Our Story</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Terms of Use</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Privacy Policy</a>
-                </li>
-
-            </ul>
-
-            <div class="footer-list">
-
-                <p class="h4 footer-list-title">Our Newsletter</p>
-
-                <p class="footer-text">
-                    Subscribe to our newsletter to get our news & deals delivered to you.
-                </p>
-
-                <form action="" class="input-wrapper">
-                    <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-
-                    <button type="submit" class="submit-btn">Join</button>
-                </form>
-
-            </div>
-
-        </div>
-    </footer>
-
-
-
+    </div>
 
 
     <!-- - Custom js Link - -->
