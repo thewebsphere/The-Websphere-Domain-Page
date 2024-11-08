@@ -48,3 +48,48 @@ svg {
     color: #0a7c1d;
     padding: 6px;
 }
+
+/* Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    background-color: #0a7c1d;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.bottom-nav li {
+    margin: 0 20px;
+}
+
+.bottom-nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 21px;
+    padding: 5px 14px;
+    border-radius: 7px;
+    transition: background-color .7s;
+}
+
+.bottom-nav a:hover {
+    background-color: #000;
+    color: #0a7c1d;
+}
+
+@media (max-width: 600px) {
+    .bottom-nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
