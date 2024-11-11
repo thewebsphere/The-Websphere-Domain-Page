@@ -72,20 +72,51 @@ svg {
     margin: 0 20px;
 }
 
-.bottom-nav a {
+.navlink {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     color: #000;
     text-decoration: none;
     font-weight: normal;
     font-size: 21px;
     padding: 5px 14px;
     border-radius: 7px;
-    transition: background-color .7s;
 }
 
-.bottom-nav a:hover {
-    background-color: #000;
-    color: #0a7c1d;
+.navlink i {
+    font-size: 24px;
+    transition: transform .3s ease, opacity .3s ease;
 }
+
+
+.navlink .nav-text {
+    font-size: 18px;
+    margin-top: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.navlink:hover i {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.navlink:hover .nav-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Highlighting Active Link */
+
+.navlink.active {
+    color: red;
+}
+
+/*  Responsive */
 
 @media (max-width: 600px) {
     .bottom-nav a {
