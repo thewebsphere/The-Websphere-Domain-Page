@@ -1,4 +1,94 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Full Page Layout */
+body, html {
+    height: 100%;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+}
+
+.dictionary-entry {
+    text-align: left;
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.dictionary-entry h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.phonetic{
+    font-style: italic;
+    color: #666;
+}
+
+.part-of-speech {
+    font-variant: small-caps;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.definition {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #444;
+}
+
+.etymology {
+    font-style: italic;
+    color: #666;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.summary-section {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.summary-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.explore-button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.explore-button:hover{
+    background-color: #2980b9;
+}
 
 /* Navigation Bar */
 .bottom-nav {
