@@ -7,12 +7,30 @@
 
 /* Full Page Layout */
 body, html {
-    height: 100%;
-    font-family: "Playfair Display", serif;
+    font-family: "Merriweather", serif;
+    background-color: #fff;
+}
+
+/* Page Sections */
+.page {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.home-page {
+    overflow: hidden;
     background-color: #fff;
+}
+
+#blog {
+    background-color: #4a9144;
+}
+
+#merch {
+    background-color: #6061aa;
 }
 
 /* Main Content */
@@ -27,34 +45,29 @@ body, html {
 
 .dictionary-entry {
     text-align: left;
-    font-family: 'Georgia', serif;
     color: #333;
     margin-bottom: 40px;
 }
 
 .dictionary-entry h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #2c3e50;
+    font-size: 49px;
+    font-weight: 800;
+    color: browm;
 }
 
 .phonetic{
     font-style: italic;
     color: #666;
-}
-
-.part-of-speech {
-    font-variant: small-caps;
-    margin-left: 10px;
-    font-size: 16px;
-    color: #333;
+    font-size: 19px;
 }
 
 .definition {
-    margin-top: 30px;
+    margin-top: 3rem;
     font-size: 18px;
     color: #444;
 }
+
+.definition strong
 
 .etymology {
     font-style: italic;
@@ -76,13 +89,14 @@ body, html {
 }
 
 .explore-button {
-    background-color: #3498db;
-    color: #fff;
+    background-color: #D11528;
+    color: #000;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    animation: bounce 2.4s infinite; /*** * Bouncing Animation  * ***/
     transition: background-color .3s;
 }
 
@@ -96,8 +110,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    font-family: "Playfair Display", serif;
-    background-color: #0a7c1d;
+    background-color: #22BF7E;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -154,7 +167,7 @@ body, html {
 /* Highlighting Active Link */
 
 .navlink.active {
-    color: #fff;
+    color: #D11528;
 }
 
 /*  Responsive */
@@ -163,5 +176,19 @@ body, html {
     .bottom-nav a {
         font-size: 16px;
         padding: 6px 12px;
+    }
+}
+
+/* Bouncing Effects Animation */
+
+@keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-14px);
+    }
+    80% {
+        transform: translateY(-7px);
     }
 }
