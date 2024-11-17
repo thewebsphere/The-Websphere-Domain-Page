@@ -1,10 +1,10 @@
 // Hightlighting the Active Page Link
 function highLight() {
     const links = document.querySelectorAll('.navlink');
-    const currentPage = window.location.hash.substring(1) || 'home';
+    const currentPage = window.location.hash || '#home';
 
     links.forEach(link => {
-        if(link.getAttribute('data-page') === currentPage) {
+        if(link.getAttribute('href') === currentPage) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
@@ -12,26 +12,34 @@ function highLight() {
     });
 }
 
-// Event Listener for hash change to update the active page
-window.addEventListener('hashchange', highLight);
-
-// Initial call to highlight the current page onload
-highLight();
 
 // Smooth Scroll on Click
-function smoothScroll(event) {
-    event.preventDefault();
-    const targetId = event.currenTarget.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-        window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: "smooth"
+function smoothScroll() {
+    const links = document.querySelectorAll(".nav-link");
+
+    links.forEach(link => {
+        link.addEventListener("click", event => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
         });
-    }
+    });
 }
 
-// Event Listener for smooth scroll
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', smoothScroll);
-});
+
+// Initialize functions
+function initializeNavigation() {
+    hightlightActiveLink(); // Call active link highlighting on page load
+
+    // Update highlighting on hash change 
+    window.addEventListener("hashchange", hightlightActiveLink);
+
+    enableSmoothScrolling(); // Enable Smooth Scrolling
+}
+
+// Initialize when DOM is loaded
+document.addEventListener("DOMContentLoaded", initializeNavigation);
