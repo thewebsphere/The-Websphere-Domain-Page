@@ -30,7 +30,6 @@ function smoothScroll() {
     });
 }
 
-
 // Initialize functions
 function initializeNavigation() {
     hightlightActiveLink(); // Call active link highlighting on page load
@@ -43,3 +42,4 @@ function initializeNavigation() {
 
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", initializeNavigation);
+
