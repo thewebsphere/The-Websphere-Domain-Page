@@ -84,6 +84,16 @@ body, html {
     line-height: 1.5;
 }
 
+.summary-text .Hello {
+    font-weight: bold;
+    line-height: 3;
+}
+
+.summary-text .Thanks {
+    font-weight: bold;
+    line-height: 3;
+}
+
 .explore-button {
     background-color: #D11528;
     color: #000;
