@@ -94,6 +94,11 @@ body, html {
     line-height: 3;
 }
 
+.summary-text .myInfo {
+    font-style: italic;
+    color: #808080;
+}
+
 .explore-button {
     background-color: #D11528;
     color: #000;
