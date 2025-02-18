@@ -9,26 +9,37 @@
 
 body {
     background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 
 /***************************** Navigation Bar Styles **/
 
 .navbar {
     font-family: "Cinzel", serif;
-    font-weight: 600;
-    border-bottom: 1.4px solid var(--secondary-color);
+    font-weight: normal;
+    border-bottom: 1.2px solid var(--secondary-color);
 }
 
 .navbar-brand {
-    font-weight: 800;
-    font-size: 2.1rem;
+    margin: 1.2rem 0 ;
+    font-weight: bold;
+    font-size: 2.4rem;
     color: var(--secondary-color);
 }
 
 .nav-link {
     color: var(--secondary-color);
-    text-decoration: underline;
     letter-spacing: 1.2px;
+    padding: 1.2px 0;
+}
+
+.nav-item {
+    border-bottom: none;
+    transition: 1.4s ease-in-out;
+}
+
+.nav-item:hover {
+    border-bottom: 1.2px solid var(--secondary-color);
 }
 
 .navbar-toggler {
