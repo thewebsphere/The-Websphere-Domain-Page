@@ -16,10 +16,11 @@ body {
 .navbar {
     font-family: "Cinzel", serif;
     font-weight: 600;
+    border-bottom: 1.4px solid var(--secondary-color);
 }
 
 .navbar-brand {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2.1rem;
     color: var(--secondary-color);
 }
@@ -27,6 +28,7 @@ body {
 .nav-link {
     color: var(--secondary-color);
     text-decoration: underline;
+    letter-spacing: 1.2px;
 }
 
 .navbar-toggler {
