@@ -1,0 +1,28 @@
+/** GLOBAL VARIABLES **/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root {
+    --primary-color: #fefae0;
+    --secondary-color: #283618;
+    --tertiary-color: #606c38;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.navbar-toggler {
+    background-color: var(--tertiary-color);
+}
+
