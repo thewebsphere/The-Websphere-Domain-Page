@@ -12,6 +12,9 @@ body {
     background-color: var(--primary-color);
     font-family: 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 /**************************** Navigation Bar **/
@@ -19,6 +22,7 @@ body {
 .navigationBar {
     padding: 1rem;
     margin: 1.4rem;
+    overflow: hidden;
 }
 
 .nav-item {
@@ -45,25 +49,26 @@ body {
 /**************************** Main Section **/
 
 .main {
-    width: 45%;
+    width: 100%;
+    margin: 1.4rem 1.4rem 1.4rem 0;
 }
 
 .main .main-header {
     font-size: 4.9rem;
-    margin: 14px;
+    margin: 1.4rem;
     word-spacing: 14px;
     color: var(--tertiary-color);
 }
 
 .mainText {
-    margin: 4.9px 0 4.9px 0;
+    margin: 1.4rem;
     padding: 0 0 0 4px;
     font-size: 18px;
     color: var(--tertiary-color);
 }
 
 .mainButton {
-    margin: 1.4rem 0 0 0;
+    margin: 1.4rem 1.4rem 0 1.4rem;
     border: none;
     font-size: 22px;
     background-color: var(--primary-color);
@@ -72,7 +77,36 @@ body {
 }
 
 .fa-solid {
-    padding: 0 .7rem 0 0;
     font-size: 1rem;
     color: var(--tertiary-color);
+}
+
+/************************** Services Section **/
+
+.Services {
+    color: var(--tertiary-color);
+    width: 100%;
+    margin: 0 1.4rem 1.4rem 1.4rem;
+}
+
+/************************** Resources Section **/
+
+.Resources {
+    color: var(--tertiary-color);
+    width: 100%;
+    margin: 0 1.4rem 1.4rem 2.1rem;
+}
+
+/************************** Resources Section **/
+
+.Contributions {
+    color: var(--tertiary-color);
+    width: 100%;
+    margin: 0 1.4rem 1.4rem 2.8rem;
+}
+
+@media screen and (max-width: 567px) {
+    body {
+        margin: auto;
+    }
 }
