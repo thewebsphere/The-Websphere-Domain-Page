@@ -44,6 +44,9 @@ body {
 
 /**************************** Main Section **/
 
+.main {
+    width: 45%;
+}
 
 .main .main-header {
     font-size: 4.9rem;
