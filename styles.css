@@ -17,12 +17,18 @@ body {
     overflow: hidden;
 }
 
+br {
+    margin: 14px;
+}
+
 /**************************** Navigation Bar **/
 
 .navigationBar {
     padding: 1rem;
     margin: 1.4rem;
     overflow: hidden;
+    text-transform: lowercase;
+    font-weight: light;
 }
 
 .nav-item {
@@ -60,14 +66,15 @@ body {
 .main .main-header {
     font-size: 4.9rem;
     margin: 1.4rem;
-    word-spacing: 14px;
+    letter-spacing: 7px;
+    font-weight: 800;
     color: var(--tertiary-color);
 }
 
 .mainText {
     margin: 1.4rem;
     padding: 0 0 0 4px;
-    font-size: 18px;
+    font-size: 19px;
     color: var(--tertiary-color);
 }
 
@@ -78,12 +85,51 @@ body {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     border-bottom: 1.4px solid var(--secondary-color);
+    text-transform: lowercase;
+    font-weight: light;
 }
 
+.occupation {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 2.1px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.reflected {
+    transform: rotate(180deg);
+    transition: .7s ease-in;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+.reflected:hover {
+    transform: rotate(0deg);
+    display: inline-block;
+    color: var(--tertiary-color);
+}
+
+.fa-seedling {
+    display: none;
+}
 
 .fa-solid {
     font-size: 1rem;
     color: var(--tertiary-color);
+}
+
+.mainContainer .fa-plus {
+    opacity: .5;
+}
+
+.row .fa-plus {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    opacity: .5;
 }
 
 /************************** Services Section **/
@@ -94,30 +140,11 @@ body {
     margin: 0 1.4rem 1.4rem 1.4rem;
 }
 
-/************************** Resources Section **/
-
-.Resources {
-    color: var(--tertiary-color);
-    width: 100%;
-    margin: 0 1.4rem 1.4rem 2.1rem;
-}
-
-/************************** Resources Section **/
-
-.Contributions {
-    color: var(--tertiary-color);
-    width: 100%;
-    margin: 0 1.4rem 1.4rem 2.8rem;
-}
-
-
-.Extras {
-    padding: 1.2rem;
-}
-
 .footer {
     padding: 20px;
     text-align: center;
+    text-transform: lowercase;
+    font-weight: light;
 }
   
 .footer .container {
