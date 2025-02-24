@@ -1,92 +1,93 @@
+/* Fallback to Arial, sans-serif if custom font fails */
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 
-/***************************** Global Variables **/
+/***************************** Global Resets & Layout **/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+    padding-bottom: 60px; /* Prevents fixed footer from overlapping content */
+}
+
+/* Main fills available space so footer stays at bottom */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************** CSS Variables **/
 :root {
     --primary-color: #011627;
     --secondary-color: #2ec4b6;
     --tertiary-color: #fdfffc;
 }
 
-body {
-    background-color: var(--primary-color);
-    font-family: 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-}
-
-br {
-    margin: 14px;
-}
-
 /**************************** Navigation Bar **/
-
-.navigationBar {
+.navbar {
     padding: 1rem;
     margin: 1.4rem;
     text-transform: lowercase;
-    font-weight: light;
+    font-weight: 300;
 }
 
-.nav-item {
-    border-bottom: 1.4px solid var(--tertiary-color);
-    margin: 0 14px;
-}
-
-.nav-item:hover {
-    border-bottom: none;
-}
-
+/* Style nav links with border-bottom and transitions */
 .nav-link {
     color: var(--secondary-color);
     font-size: 1.1rem;
+    border-bottom: 1.4px solid var(--tertiary-color);
+    margin: 0 14px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-link:hover {
-    text-decoration: none;
-    color: var(--primary-color);
+    border-bottom: none;
     background-color: var(--tertiary-color);
+    color: var(--primary-color);
     border-radius: 7px;
+    text-decoration: none;
 }
 
 /**************************** Main Section **/
-
-.mainContainer {
-    padding: 4rem;
-}
-
-.mainContainer .fa-plus {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    opacity: .5;
-    color: var(--secondary-color);
-}
-
-.main {
-    margin: 1.4rem 1.4rem 2.8rem 0;
-}
-
-.main .main-header {
+/* For larger header text, add class "main-header" to your h1 */
+.main-header {
     font-size: 4.9rem;
     margin: 1.4rem;
     letter-spacing: 7px;
     font-weight: 800;
     color: var(--tertiary-color);
+    white-space: normal;
 }
 
-.main .fa-arrow-right {
-    font-size: 1rem;
-    color: var(--tertiary-color);
-    transition: .5s ease-in;
+/* Responsive typography adjustments */
+@media (max-width: 992px) {
+    .main-header {
+        font-size: 3.8rem;
+        letter-spacing: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+}
+@media (max-width: 576px) {
+    .main-header {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
 }
 
-.main .fa-arrow-right:hover {
-    transform: translateX(21px);
-    color: var(--secondary-color);
-    opacity: 0;
-}
-
+/* Main paragraph text styling (apply .mainText to your paragraphs if desired) */
 .mainText {
     margin: 1.4rem;
     padding-left: 4px;
@@ -94,7 +95,8 @@ br {
     color: var(--tertiary-color);
 }
 
-.mainButton {
+/* Button styling for Explore and Service buttons using .btn-custom */
+.btn-custom, .mainButton {
     margin: 1.4rem;
     border: none;
     font-size: 22px;
@@ -102,108 +104,70 @@ br {
     color: var(--tertiary-color);
     border-bottom: 1.4px solid var(--secondary-color);
     text-transform: lowercase;
-    font-weight: light;
-    transition: .4s ease-in;
-}
-
-.mainButton:hover {
-    color: var(--secondary-color);
-    border-bottom: none;
-}
-
-.occupation {
-    font-style: italic;
     font-weight: 300;
-    letter-spacing: 2.1px;
-    font-size: 20px;
-    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.reflected {
-    transform: rotate(180deg);
-    transition: .7s ease-in;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    color: var(--secondary-color);
+.btn-custom:hover, .btn-custom:focus,
+.mainButton:hover, .mainButton:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.reflected:hover {
-    transform: rotate(0deg);
-    color: var(--tertiary-color);
-}
-
-.mainContainer .fa-plus {
-    opacity: .5;
-}
-
-.row1 .fa-plus {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    opacity: .5;
-    color: var(--secondary-color);
-}
-
-/************************** Services Section **/
-
-.Services {
-    color: var(--tertiary-color);
-    width: 100%;
-    margin: 0 1.4rem 1.4rem;
-}
-
-/************************** Footer Section **/
-
-.footer {
-    padding: 20px;
-    text-align: end;
-    text-transform: lowercase;
-    font-weight: light;
-}
-  
-.footer .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-  
-.footer .row {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-  
-.footer ul {
+/************************** Services Section ************************/
+/* Fade toggle list for services */
+.services-list {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-  
-.footer li {
-    display: inline-block;
-    margin: 0 14px;
-    border-bottom: 1.4px solid var(--tertiary-color);
-    padding-bottom: 7px;
-    transition: .4s ease-in;
+    margin: 1.4rem;
 }
 
-.footer li:hover {
-    text-decoration: none;
-    padding-bottom: 0px;
+.services-list.show {
+    display: block;
+    opacity: 1;
 }
-  
-.footer a {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-  
-.footer a:hover {
+
+/* Styling for individual list items */
+.services-list li {
+    padding: 0.5rem 0;
     color: var(--tertiary-color);
 }
-  
-@media screen and (max-width: 567px) {
-    body {
-        margin: auto;
-    }
+
+/**************************** Footer ************************/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    text-transform: lowercase;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Social links styling in the footer */
+footer .social-links a {
+    margin: 0 14px;
+    border-bottom: 1.4px solid var(--tertiary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+}
+
+footer .social-links a:hover {
+    border-bottom: none;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+footer .copyright {
+    font-size: 1.1rem;
 }
