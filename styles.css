@@ -115,6 +115,10 @@ SERVICES SECTION
 
 */
 
+section {
+    background-color: var(--black);
+}
+
 section .text-white {
     font-weight: bold;
     margin: 14px 0 14px 0;
@@ -175,5 +179,7 @@ FOOTER SECTION
 .footer-link:hover {
     border-bottom: 1.4px solid var(--black);
 }
-  
-  
+
+.container-fluid .col-md-6 br {
+    padding: 2.1px 0;
+}  
