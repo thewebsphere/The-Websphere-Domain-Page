@@ -4,98 +4,90 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
-
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    >
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css">
-
+    
     <title>MUTHUNGU</title>
   </head>
   <body>
+    <header id="Home">
+      <nav class="navigationBar">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#Home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./extras/TheBlog.html">THE BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./extras/TheMerch.html">THE MERCH</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    
-    <div class="navigationBar">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#Home">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./extras/TheBlog.html">THE BLOG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./extras/TheMerch.html">THE MERCH</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Main Section -->
-
-    <div class="container mainContainer">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="row">
-        <div class="main col-lg-6 col-md-6 col-sm-12">
-          <h1 class="main-header">
-            
-            An Engin<span class="reflected">ee</span>r, 
-            
-            Farm<span class="reflected">e</span>r.</h1>
-
-          <p class="mainText">
-            <i class="fa-solid fa-arrow-right"></i>
-            I help people and organizations grow through technology, sustainability and creative thinking. <br>
-
-            As an <span class="occupation">engineer</span> and <span class="occupation">farmer</span> , I'm passionate about harnessing the power of technology to drive sustainable
-             solutions and foster a more regenerative future. Whether you're an individual, organization, or community,
+    <main>
+      <div class="container mainContainer">
+        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+        <div class="row">
+          <div class="main col-lg-6 col-md-6 col-sm-12">
+            <h1 class="main-header">
+              An Engin<span class="reflected">ee</span>r, 
+              Farm<span class="reflected">e</span>r.
+            </h1>
+            <p class="mainText">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              I help people and organizations grow through technology, sustainability and creative thinking. <br>
+              As an <span class="occupation">engineer</span> and <span class="occupation">farmer</span>, I'm passionate about harnessing the power of technology to drive sustainable
+              solutions and foster a more regenerative future. Whether you're an individual, organization, or community,
               I'm here to help you navigate the intersection of technology, sustainability, and creativity, and unlock new possibilities for growth and success.
-              
-          </p>
-          <button class="mainButton">
-            <i class="fa-solid fa-arrow-right"></i>
-            Explore
-          </button>
-          <div id="Services">
-            <button class="mainButton">
-              <i class="fa-solid fa-arrow-right"></i>
-              Services
+            </p>
+            <button id="exploreButton" class="mainButton">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              Explore
             </button>
+            <div id="Services">
+              <button class="mainButton">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                Services
+              </button>
+            </div>
           </div>
+          <i class="fa-solid fa-plus" aria-hidden="true"></i>
         </div>
+      </div>
+    </main>
 
-        <i class="fa-solid fa-plus"></i>
-      </div>
-      </div>
-    </div>
-    
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p>&copy; 2025 Muthungu </p>
-            <p><a href="mailto:Clinton@muthungu.co.ke">Clinton@muthungu.co.ke</a></p>
-          </div>
-          <div class="col-md-6">
+          <div class="col-md-4 Links">
             <ul>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#">TERMS</a></li>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">reddit</a></li>
+              <li><a href="#">telegram</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <!-- Font Awesome (deferred since icons are not critical on initial load) -->
+    <script defer src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./scripts.js"></script>
   </body>
 </html>
