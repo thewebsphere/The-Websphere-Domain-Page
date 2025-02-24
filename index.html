@@ -1,98 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    >
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles.css">
-    
-    <title>MUTHUNGU</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Professional Site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
 
-    <!-- Navigation Bar -->
-
-    <header id="Home">
-      <nav class="navigationBar">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#Home">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./extras/TheBlog.html">THE BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./extras/TheMerch.html">THE MERCH</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main Section -->
-
-    <main>
-      <div class="container-fluid mainContainer">
-        <i class="fa-solid fa-plus" aria-hidden="true"></i>
-        <div class="row row1">
-          <div class="main col-lg-6 col-md-6 col-sm-12">
-            <h1 class="main-header">
-              An Engin<span class="reflected">ee</span>r, 
-              Farm<span class="reflected">e</span>r.
-            </h1>
-            <p class="mainText">
-              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              I help people and organizations grow through technology, sustainability and creative thinking. <br>
-              As an <span class="occupation">engineer</span> and <span class="occupation">farmer</span>, I'm passionate about harnessing the power of technology to drive sustainable
-              solutions and foster a more regenerative future. Whether you're an individual, organization, or community,
-              I'm here to help you navigate the intersection of technology, sustainability, and creativity, and unlock new possibilities for growth and success.
-            </p>
-            <button id="exploreButton" class="mainButton">
-              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              Explore
-            </button>
-            <div id="Services">
-              <button class="mainButton">
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                Services
-              </button>
-            </div>
-          </div>
-          <i class="fa-solid fa-plus" aria-hidden="true"></i>
-        </div>
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-expand" role="navigation" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brand</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="#" aria-label="home">home</a>
+        <a class="nav-link" href="#" aria-label="the blog">the blog</a>
+        <a class="nav-link" href="#" aria-label="the merch">the merch</a>
       </div>
-    </main>
+    </div>
+  </nav>
 
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 Links">
-            <ul>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#">TERMS</a></li>
-            </ul>
-          </div>
-        </div>
+  <!-- Main Section -->
+  <main class="container my-4 main">
+    <div class="row align-items-center">
+      <!-- Left Column: Header -->
+      <div class="col-md-6">
+        <h1 class="fw-bold main-header">A farmer, maerketer.</h1>
       </div>
-    </footer>
+      <!-- Right Column: Professional Summary -->
+      <div class="col-md-6 text-end">
+        <p class="mainText">Professional summary paragraph one. This text summarizes the professional background.</p>
+        <p class="mainText">Professional summary paragraph two. Additional details can go here.</p>
+      </div>
+    </div>
+    <!-- Explore Button -->
+    <div class="my-3 text-center">
+      <button class="btn btn-custom btn-lg mainButton">Explore</button>
+    </div>
 
-    <!-- Font Awesome (deferred since icons are not critical on initial load) -->
-    <script defer src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <!-- Custom JS -->
-    <script src="./scripts.js"></script>
-  </body>
+    <!-- Services Section -->
+    <section class="my-4 Services">
+      <div class="text-center">
+        <button id="serviceToggle" class="btn btn-custom">Service</button>
+      </div>
+      <!-- Fade toggle list -->
+      <ul id="servicesList" class="list-group mt-3 services-list">
+        <li class="list-group-item">Service Item 1</li>
+        <li class="list-group-item">Service Item 2</li>
+        <li class="list-group-item">Service Item 3</li>
+        <li class="list-group-item">Service Item 4</li>
+        <li class="list-group-item">Service Item 5</li>
+        <li class="list-group-item">Service Item 6</li>
+        <li class="list-group-item">Service Item 7</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter" width="24"></a>
+      <a href="#" aria-label="Reddit"><img src="reddit-icon.png" alt="Reddit" width="24"></a>
+      <a href="#" aria-label="Telegram"><img src="telegram-icon.png" alt="Telegram" width="24"></a>
+    </div>
+    <div class="copyright">
+      <span>&copy; 2025 Your Company</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Services List Toggle -->
+  <script>
+    document.getElementById('serviceToggle').addEventListener('click', function() {
+      var list = document.getElementById('servicesList');
+      list.classList.toggle('show');
+    });
+  </script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
