@@ -1,205 +1,38 @@
 /* Fallback to Arial, sans-serif if custom font fails */
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 
-/***************************** Global Resets & Layout **/
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
-/* Allows main content to fill space so footer stays at bottom */
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/***************************** CSS Variables **/
 :root {
-    --primary-color: #011627;
-    --secondary-color: #2ec4b6;
-    --tertiary-color: #fdfffc;
+    --white: #fff;
+    --black: #000;
+    --green: #00FF00;
 }
-
-/**************************** Navigation Bar **/
-.navigationBar {
-    padding: 1rem;
-    margin: 1.4rem;
-    text-transform: lowercase;
-    font-weight: 300;
+/* Navbar Container */
+nav {
+    background-color: var(--black); /* Black background */
+    padding: 1.4rem 0 1.4rem 0 ;
 }
-
-.nav-item {
-    border-bottom: 1.4px solid var(--tertiary-color);
-    margin: 0 14px;
-    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
-}
-
-.nav-item:hover {
-    border-bottom: none;
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-    border-radius: 7px;
-}
-
+  
+  /* Nav Link Styles */
 .nav-link {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
+    color: var(--white); /* White text */
+    border: 1.4px solid var(--green); /* Green border */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
-.nav-link:hover {
-    text-decoration: none;
+.navbar-nav {
+    padding: 7px;
 }
-
-/**************************** Main Section **/
-.mainContainer {
-    padding: 4rem;
-}
-
-.main-header {
-    font-size: 4.9rem;
-    margin: 1.4rem;
-    letter-spacing: 7px;
-    font-weight: 800;
-    color: var(--tertiary-color);
-    white-space: normal;
-}
-
-.mainText {
-    margin: 1.4rem;
-    padding-left: 4px;
-    font-size: 19px;
-    color: var(--tertiary-color);
-}
-
-.mainButton {
-    margin: 1.4rem;
+  
+  /* Hover Effects for Nav Links */
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--green); /* Green background on hover */
+    color: #000; /* Black text on hover */
     border: none;
-    font-size: 22px;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    border-bottom: 1.4px solid var(--secondary-color);
-    text-transform: lowercase;
-    font-weight: 300;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.mainButton:hover,
-.mainButton:focus {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/**************************** Services Section ************************/
-.Services {
-    color: var(--tertiary-color);
-    width: 100%;
-    margin: 0 1.4rem 1.4rem;
-    text-align: center;
-}
-
-.services-list {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    list-style: none;
-    padding: 0;
-    margin: 1.4rem auto;
-    max-width: 300px;
-}
-
-.services-list.show {
-    display: block;
-    opacity: 1;
-}
-
-.services-list li {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    border: 1px solid var(--secondary-color);
-    padding: 10px;
-    margin-bottom: 5px;
-    text-transform: lowercase;
-}
-
-/**************************** Footer ************************/
-.footer {
-    padding: 20px;
-    text-align: center;
-    text-transform: lowercase;
-    font-weight: 300;
-    background-color: var(--primary-color);
-}
-
-.footer .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer .col-md-6 {
-    flex-basis: 45%;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer li {
-    display: inline-block;
-    margin: 0 14px;
-    border-bottom: 1.4px solid var(--tertiary-color);
-}
-
-.footer li:hover {
-    text-decoration: none;
-}
-
-.footer a {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: var(--tertiary-color);
-}
-
-/**************************** Responsive Adjustments ************************/
-@media screen and (max-width: 992px) {
-    .main-header {
-        font-size: 3.8rem;
-        letter-spacing: 5px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-header {
-        font-size: 3rem;
-        letter-spacing: 3px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .main-header {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
-}
+  
