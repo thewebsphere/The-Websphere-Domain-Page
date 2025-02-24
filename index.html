@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minimal Professional Site</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- External CSS -->
-  <link rel="stylesheet" href="/styles.css">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-..." crossorigin="anonymous">
+  <!-- External CSS with versioning to avoid caching issues -->
+  <link rel="stylesheet" href="styles.css?v=1.0">
 </head>
 <body>
 
@@ -62,9 +64,10 @@
   <!-- Footer Section -->
   <footer>
     <div class="social-links">
-      <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter" width="24"></a>
-      <a href="#" aria-label="Reddit"><img src="reddit-icon.png" alt="Reddit" width="24"></a>
-      <a href="#" aria-label="Telegram"><img src="telegram-icon.png" alt="Telegram" width="24"></a>
+      <!-- Ensure that the images folder exists and icons are correctly named -->
+      <a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter" width="24"></a>
+      <a href="#" aria-label="Reddit"><img src="images/reddit-icon.png" alt="Reddit" width="24"></a>
+      <a href="#" aria-label="Telegram"><img src="images/telegram-icon.png" alt="Telegram" width="24"></a>
     </div>
     <div class="copyright">
       <span>&copy; 2025 Your Company</span>
