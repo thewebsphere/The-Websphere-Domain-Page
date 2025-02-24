@@ -8,11 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Navigation Section (unchanged) -->
-  <nav class="navbar navbar-expand">
+  <nav class="navbar navbar-expand fixed-top">
     <div class="container justify-content-center">
       <ul class="navbar-nav">
         <li class="nav-item mx-3">
@@ -40,13 +42,13 @@
     <div class="row align-items-start mb-4">
       <!-- Left Column: Subheading -->
       <div class="col-md-4">
-        <h3 class="textmuted">Open To Work</h3>
+        <h3 class="textmuted">Open To Work <i class="fa-solid fa-check"></i> </h3>
       </div>
       <!-- Right Column: Professional Summary -->
       <div class="col-md-8">
         <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu felis tincidunt, bibendum ligula sit amet, scelerisque metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer in facilisis dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pharetra, ligula ut tincidunt efficitur, ex massa luctus eros, at lobortis massa quam at dui. Suspendisse potenti. Sed interdum justo in libero porta, id elementum magna interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed fermentum lacus id purus molestie, non pretium neque placerat. Nulla facilisi. Curabitur ac risus nec dui lobortis tincidunt. Morbi at felis quis lorem congue blandit. Curabitur cursus, nulla non aliquam convallis, urna turpis egestas arcu, in ultrices massa risus in mauris.</p>
-          <p>Vestibulum in dui nec sapien congue efficitur. Aenean bibendum orci ac nisi gravida, a malesuada orci gravida. Morbi suscipit massa a nisi scelerisque, nec ultricies felis malesuada. Donec consequat tortor non massa imperdiet, sed malesuada dolor hendrerit. Donec sit amet risus vel neque lobortis imperdiet. Vivamus ac libero nec libero congue volutpat. Integer maximus, sapien nec feugiat vulputate, libero nisl malesuada leo, vel porttitor turpis nibh at elit. Maecenas euismod velit sed diam facilisis, ac pulvinar nisl faucibus. In at sapien sed nibh convallis pharetra. Aliquam erat volutpat. Phasellus eget metus at lectus tincidunt ullamcorper.</p>
+          <p class="prof-summary">As a computer engineer, my technical foundation is built through rigorous academic pursuits. From primary school, refined in secondary education, and ultimately culminating in a specialized University Degree in Computer Ccience. Each phase of my academic path allowed me to explore the fundamentals of programming concepts, data structures to advanced system architectures and algorithm design.
+          <p class="prof-summary">Today, I leverage a comprehensive skill set that spans multiple programming languages and modern development frameworks, enabling me to design solutions that are both efficient and elegant. I am passionate about translating abstract ideas into tangible digital realities, always striving to push the boundaries of what technology can achieve. Every project I undertake is a testament to my commitment to excellence, a reflection of my journey from humble beginnings to a seasoned professional ready to shape the future of technology. My ongoing quest for innovation drives me to explore emerging technologies and consistently elevate my professional capabilities with unwavering dedication.</p>
         </article>
       </div>
     </div>
@@ -62,6 +64,49 @@
       </div>
     </div>
   </main>
+
+  <!-- Services Section (with black background) -->
+  <section id="services" class="py-5" style="background-color: black;">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h2 class="text-white">Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Engineer Column -->
+        <div class="col-md-6 text-center mb-4">
+          <h3 class="text-white">Engineer</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="service-link" aria-label="ICT consulting">ict consulting</a>
+            </li>
+            <li>
+              <a href="#" class="service-link" aria-label="web development">web development</a>
+            </li>
+            <li>
+              <a href="#" class="service-link" aria-label="ict security">ict security</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Farmer Column -->
+        <div class="col-md-6 text-center mb-4">
+          <h3 class="text-white">Farmer</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="service-link" aria-label="agri-consulting">agri-consulting</a>
+            </li>
+            <li>
+              <a href="#" class="service-link" aria-label="poultry farming">poultry farming</a>
+            </li>
+            <li>
+              <a href="#" class="service-link" aria-label="kennels">kennels</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer Section (to be added later) -->
   <footer>
