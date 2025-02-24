@@ -32,7 +32,28 @@ nav {
 .nav-link:hover,
 .nav-link:focus {
     background-color: var(--green); /* Green background on hover */
-    color: #000; /* Black text on hover */
+    color: var(--black); /* Black text on hover */
     border: none;
 }
+
+/* Section Link Styles for Download and Social Links (in Main Section) */
+.section-link {
+    color: var(--black); /* Black text on white background */
+    border-bottom: 1.4px solid green; /* Green bottom border for contrast */
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+    padding: 0.5rem 1rem; /* Uniform spacing */
+    text-decoration: none;
+    text-transform: lowercase;
+}
   
+.section-link:hover,
+.section-link:focus {
+    border-bottom: none;
+    background-color:var(--green);
+    color: var(--black);
+}
+
+.textmuted {
+    color: var(--black);
+    opacity: .5;
+}
