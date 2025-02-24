@@ -79,6 +79,18 @@ main .col-md-8 .prof-summary {
     color: var(--black);
 }
 
+.section-link .fa-arrow-right {
+    color: var(--green);
+    padding: 4px;
+    transition: .7s ease-in;
+}
+
+.section-link .fa-arrow-right:hover {
+    transform: translateX(7px);
+    opacity: 0;
+    color: var(--black);
+}
+
 .textmuted {
     color: var(--green);
     text-shadow: var(--black);
@@ -108,6 +120,23 @@ section .text-white {
     margin: 14px 0 14px 0;
 }
 
+section .service-toggle {
+    font-weight: bold;
+    margin: 14px 0 14px 0;
+    padding: 11px;
+    text-decoration: none;
+    color: var(--white);
+    border: 1.4px solid var(--green); 
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;    
+}
+
+section .service-toggle:hover,
+section .service-toggle:focus {
+    background-color: var(--green); 
+    color: var(--black);
+    border: none;
+}
+
 section li {
     padding: 1.4rem 0 1.4rem 0;
 }
@@ -127,3 +156,24 @@ section li {
     background-color: var(--green);
     color: black;
 }
+
+/*
+
+FOOTER SECTION                   
+
+*/
+
+.footer-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 1.4rem 0 1.4rem 0;
+    transition: color 0.3s;
+    opacity: .7;
+}
+  
+.footer-link:hover {
+    border-bottom: 1.4px solid var(--black);
+}
+  
+  
