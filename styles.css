@@ -1,22 +1,35 @@
+/* Fallback to Arial, sans-serif if custom font fails */
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 
-/***************************** Global Variables **/
+/***************************** Global Resets & Layout **/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+    /* Remove fixed width/height so layout can adapt fluidly */
+}
+
+
+main {
+    /* Allows main content to fill space so footer stays at bottom */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************** CSS Variables **/
 :root {
     --primary-color: #011627;
     --secondary-color: #2ec4b6;
     --tertiary-color: #fdfffc;
-}
-
-body {
-    background-color: var(--primary-color);
-    font-family: 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
-}
-
-br {
-    margin: 14px;
 }
 
 /**************************** Navigation Bar **/
@@ -25,7 +38,7 @@ br {
     padding: 1rem;
     margin: 1.4rem;
     text-transform: lowercase;
-    font-weight: light;
+    font-weight: 300;
 }
 
 .nav-item {
@@ -60,12 +73,15 @@ br {
     margin: 1.4rem 1.4rem 2.8rem 0;
 }
 
+/* Large heading with letter spacing */
 .main .main-header {
     font-size: 4.9rem;
     margin: 1.4rem;
     letter-spacing: 7px;
     font-weight: 800;
     color: var(--tertiary-color);
+    /* Ensure normal wrapping for large text */
+    white-space: normal;
 }
 
 .mainText {
@@ -83,9 +99,18 @@ br {
     color: var(--tertiary-color);
     border-bottom: 1.4px solid var(--secondary-color);
     text-transform: lowercase;
-    font-weight: light;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.mainButton:hover,
+.mainButton:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/************************* Occupation & Reflected Text ************************/
 
 .occupation {
     font-style: italic;
@@ -95,10 +120,15 @@ br {
     color: var(--secondary-color);
 }
 
+/* 
+   The .reflected class rotates text 180 degrees.
+   We keep display: inline-block and normal white-space
+   to avoid awkward line breaks.
+*/
 .reflected {
-    transform: rotate(180deg);
-    transition: .7s ease-in;
     display: inline-block;
+    transform: rotate(180deg);
+    transition: 0.7s ease-in;
     margin: 0;
     padding: 0;
     color: var(--secondary-color);
@@ -109,30 +139,30 @@ br {
     color: var(--tertiary-color);
 }
 
+/*************************** Icons & Decorations ************************/
+
+.fa-seedling {
+    display: none;
+}
 
 .fa-solid {
     font-size: 1rem;
-    color: var(--secondary-color);
-    transition: 1.4s ease-in;
+    color: var(--tertiary-color);
 }
 
-.fa-solid:hover {
-    transform: translateX(21px);
-    opacity: 0;
-}
-
+/* Slight transparency on the plus icons */
 .mainContainer .fa-plus {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .row .fa-plus {
     display: flex;
     justify-content: end;
     align-items: end;
-    opacity: .5;
+    opacity: 0.5;
 }
 
-/************************** Services Section **/
+/************************** Services Section ************************/
 
 .Services {
     color: var(--tertiary-color);
@@ -140,11 +170,15 @@ br {
     margin: 0 1.4rem 1.4rem;
 }
 
+/**************************** Footer ************************/
+
+/* The footer is naturally placed at the bottom due to flex layout */
 .footer {
     padding: 20px;
     text-align: center;
     text-transform: lowercase;
-    font-weight: light;
+    font-weight: 300;
+    background-color: var(--primary-color);
 }
   
 .footer .container {
@@ -171,15 +205,11 @@ br {
 .footer li {
     display: inline-block;
     margin: 0 14px;
-    padding-bottom: 7px;
     border-bottom: 1.4px solid var(--tertiary-color);
-    transition: .4s ease-in;
 }
 
 .footer li:hover {
     text-decoration: none;
-    color: var(--primary-color);
-    padding-bottom: 0px;
 }
   
 .footer a {
@@ -192,16 +222,28 @@ br {
     color: var(--tertiary-color);
 }
 
-.Links {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    right: 0;
-    width: 100%;
+/**************************** Responsive Adjustments ************************/
+
+/* Medium screens (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .main .main-header {
+        font-size: 3.8rem;    /* step down */
+        letter-spacing: 5px;
+    }
 }
- 
-@media screen and (max-width: 567px) {
-    body {
-        margin: auto;
+
+/* Tablets and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .main .main-header {
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* Phone sizes (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .main .main-header {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
     }
 }
