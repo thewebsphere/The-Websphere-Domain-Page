@@ -13,8 +13,8 @@
 </head>
 <body>
 
-  <!-- Navigation Section (unchanged) -->
-  <nav class="navbar navbar-expand fixed-top">
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-expand">
     <div class="container justify-content-center">
       <ul class="navbar-nav">
         <li class="nav-item mx-3">
@@ -30,7 +30,8 @@
     </div>
   </nav>
 
-  <!-- Main Section with White Background and Minimalist Look -->
+  <!-- Main Section -->
+
   <main class="container my-5 bg-white py-5">
     <!-- Row 1: Heading -->
     <div class="row mb-4">
@@ -55,7 +56,7 @@
     <!-- Row 3: Download and Social Links -->
     <div class="row">
       <div class="col d-flex justify-content-start">
-        <a href="#" class="section-link">download cv</a>
+        <a href="#" class="section-link"> <i class="fa-solid fa-arrow-right"> </i> download cv</a>
       </div>
       <div class="col d-flex justify-content-end">
         <a href="#" class="section-link me-2">twitter</a>
@@ -65,7 +66,7 @@
     </div>
   </main>
 
-  <!-- Services Section (with black background) -->
+  <!-- Services Section -->
   <section id="services" class="py-5" style="background-color: black;">
     <div class="container">
       <div class="row text-center mb-4">
@@ -76,41 +77,64 @@
       <div class="row">
         <!-- Engineer Column -->
         <div class="col-md-6 text-center mb-4">
-          <h3 class="text-white">Engineer</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#" class="service-link" aria-label="ICT consulting">ict consulting</a>
-            </li>
-            <li>
-              <a href="#" class="service-link" aria-label="web development">web development</a>
-            </li>
-            <li>
-              <a href="#" class="service-link" aria-label="ict security">ict security</a>
-            </li>
-          </ul>
+          <h3>
+            <a class="service-toggle" data-bs-toggle="collapse" href="#engineerList" role="button" aria-expanded="false" aria-controls="engineerList">
+              Engineer
+            </a>
+          </h3>
+          <div class="collapse" id="engineerList">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="service-link" aria-label="ict consulting">ict consulting</a>
+              </li>
+              <li>
+                <a href="#" class="service-link" aria-label="web development">web development</a>
+              </li>
+              <li>
+                <a href="#" class="service-link" aria-label="ict security">ict security</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Farmer Column -->
         <div class="col-md-6 text-center mb-4">
-          <h3 class="text-white">Farmer</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#" class="service-link" aria-label="agri-consulting">agri-consulting</a>
-            </li>
-            <li>
-              <a href="#" class="service-link" aria-label="poultry farming">poultry farming</a>
-            </li>
-            <li>
-              <a href="#" class="service-link" aria-label="kennels">kennels</a>
-            </li>
-          </ul>
+          <h3>
+            <a class="service-toggle" data-bs-toggle="collapse" href="#farmerList" role="button" aria-expanded="false" aria-controls="farmerList">
+              Farmer
+            </a>
+          </h3>
+          <div class="collapse" id="farmerList">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="service-link" aria-label="agri-consulting">agri-consulting</a>
+              </li>
+              <li>
+                <a href="#" class="service-link" aria-label="poultry farming">poultry farming</a>
+              </li>
+              <li>
+                <a href="#" class="service-link" aria-label="kennels">kennels</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer Section (to be added later) -->
-  <footer>
-    <!-- Footer content will be added later -->
+  <!-- Footer Section -->
+  <footer class="container-fluid py-3"">
+    <div class="row">
+      <!-- Left Side: Legal Links -->
+      <div class="col-md-6 d-flex align-items-center">
+        <a href="#" class="footer-link me-3">Privacy Policy</a>
+        <a href="#" class="footer-link me-3">Terms of Use</a>
+        <a href="#" class="footer-link">Disclaimer</a>
+      </div>
+      <!-- Right Side: Copyright -->
+      <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <small class="text-muted">&copy; 2025 Your Company. All rights reserved.</small>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap Bundle with Popper -->
