@@ -55,6 +55,14 @@ br {
     padding: 4rem;
 }
 
+.mainContainer .fa-plus {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    opacity: .5;
+    color: var(--secondary-color);
+}
+
 .main {
     width: 100%;
     margin: 1.4rem 1.4rem 2.8rem 0;
@@ -66,6 +74,18 @@ br {
     letter-spacing: 7px;
     font-weight: 800;
     color: var(--tertiary-color);
+}
+
+.main .fa-arrow-right {
+    font-size: 1rem;
+    color: var(--tertiary-color);
+    transition: .5s ease-in;
+}
+
+.main .fa-arrow-right:hover {
+    transform: translateX(21px);
+    color: var(--secondary-color);
+    opacity: 0;
 }
 
 .mainText {
@@ -84,6 +104,12 @@ br {
     border-bottom: 1.4px solid var(--secondary-color);
     text-transform: lowercase;
     font-weight: light;
+    transition: .4s ease-in;
+}
+
+.mainButton:hover {
+    color: var(--secondary-color);
+    border-bottom: none;
 }
 
 .occupation {
@@ -108,24 +134,16 @@ br {
     color: var(--tertiary-color);
 }
 
-.fa-seedling {
-    display: none;
-}
-
-.fa-solid {
-    font-size: 1rem;
-    color: var(--tertiary-color);
-}
-
 .mainContainer .fa-plus {
     opacity: .5;
 }
 
-.row .fa-plus {
+.row1 .fa-plus {
     display: flex;
     justify-content: end;
     align-items: end;
     opacity: .5;
+    color: var(--secondary-color);
 }
 
 /************************** Services Section **/
@@ -136,9 +154,11 @@ br {
     margin: 0 1.4rem 1.4rem;
 }
 
+/************************** Footer Section **/
+
 .footer {
     padding: 20px;
-    text-align: center;
+    text-align: end;
     text-transform: lowercase;
     font-weight: light;
 }
@@ -150,12 +170,8 @@ br {
   
 .footer .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-  
-.footer .col-md-6 {
-    flex-basis: 45%;
+    justify-content: end;
+    align-items: end;
 }
   
 .footer ul {
@@ -168,10 +184,13 @@ br {
     display: inline-block;
     margin: 0 14px;
     border-bottom: 1.4px solid var(--tertiary-color);
+    padding-bottom: 7px;
+    transition: .4s ease-in;
 }
 
 .footer li:hover {
     text-decoration: none;
+    padding-bottom: 0px;
 }
   
 .footer a {
