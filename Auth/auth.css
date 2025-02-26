@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --green: #00FF00;
+}
+
+/*
+
+NAVIGATION BAR SECTION                   
+
+*/
+
+nav {
+    background-color: var(--black);
+    padding: 1.4rem 0 1.4rem 0 ;
+}
+
+.nav-link {
+    color: var(--white);
+    border: 1.4px solid var(--green); 
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.navbar-nav {
+    padding: 11px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--green); 
+    color: var(--black);
+    border: none;
+}
+
+/*
+
+LOGIN & SIGNUP SECTION                   
+
+*/
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: inherit; 
+    min-height: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form h3 {
+    font-weight: bold;
+    margin: 28px 0 28px 0;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--blackn);
+    text-decoration: none;
+    margin-top: -7px;
+    opacity: .6;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: var(--green);
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.switch-form {    
+    position: fixed;
+    top: 70px;
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background: var(--green);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.signup-active .form-container {
+    background-color: white;
+    color: black;
+}
+
+/*
+
+FOOTER SECTION                   
+
+*/
+
+.footer-link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 1.4rem 0 1.4rem 0;
+    transition: color 0.3s;
+    opacity: .7;
+}
+  
+.footer-link:hover {
+    border-bottom: 1.4px solid var(--black);
+}
+
+.container-fluid .col-md-6 br {
+    padding: 2.1px 0;
+}  
