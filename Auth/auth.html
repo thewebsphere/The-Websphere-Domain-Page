@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muthungu</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/Auth/auth.css">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/ed7570f69a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-expand">
+    <div class="container justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="/index.html" aria-label="home">home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="/Auth/auth.html" aria-label="the blog">the blog</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="/Auth/auth.html" aria-label="the merch">the merch</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Toggle Icons -->
+    
+<!-- Font Awesome Icon for Switching Forms -->
+    <i class="fa-solid fa-repeat switch-form" id="switchForm"></i>
+
+    <!-- Main Content -->
+    <main class="container d-flex align-items-center justify-content-center">
+        <div class="form-container">
+            <!-- Login Form -->
+            <form id="loginForm" class="form">
+                <h3>Login</h3>
+                <input type="text" id="loginName" placeholder="Username, Email, or Phone" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <a href="#" id="forgotPassword" class="forgot-password">Forgot Password?</a>
+                <input type="text" id="accessToken" placeholder="Access Token (optional)">
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Sign-up Form -->
+            <form id="signupForm" class="form hidden">
+                <h3>Sign Up</h3>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="signupEmailPhone" placeholder="Email or Phone" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <input type="password" id="repeatPassword" placeholder="Repeat Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+
+
+  <!-- Footer Section -->
+  <footer class="container-fluid py-3"">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <a href="#" class="footer-link me-3">Privacy Policy</a>
+        <a href="#" class="footer-link me-3">Terms of Use</a>
+        <a href="#" class="footer-link">Disclaimer</a>
+      </div>
+      <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <small class="text-muted">&copy; clinton@muthungu.co.ke.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="/Auth/auth.js"></script>
+</body>
+</html>
